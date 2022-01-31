@@ -1,4 +1,25 @@
-$color__background-body: #fff;
+
+$color__gloc_green_1: #3CAE48;
+$color__gloc_green_2: #9EC73B;
+
+$col-primary: #3cae48ff;
+$col-secondary: #9ec73bff;
+$col-highlight: #ce4760ff;
+$col-blue: #456990ff;
+$col-grey: #9aa0a8ff;
+
+$color__gloc_green_1_light: lighten(#3CAE48, 10%);
+$color__gloc_green_2_light: lighten(#9EC73B, 10%);
+
+$color__gloc_purple: #AE3CA2;
+$color__gloc_orange: #f75818;
+
+$color__background-gradient: linear-gradient(to left, $color__gloc_green_1, $color__gloc_green_2);
+$color__background-gradient-light: linear-gradient(to left, $color__gloc_green_1_light, $color__gloc_green_2_light);
+$color__highlight-gradient: linear-gradient(to left, $color__gloc_purple, $color__gloc_orange);
+
+
+$color__background-body: $color__gloc_green_1;
 $color__background-screen: #f1f1f1;
 $color__background-hr: #ccc;
 $color__background-button: #e6e6e6;
@@ -18,6 +39,3 @@ $color__border-button-hover: #ccc #bbb #aaa;
 $color__border-button-focus: #aaa #bbb #bbb;
 $color__border-input: #ccc;
 $color__border-abbr: #666;
-
-$color__gloc_green_1: #3CAE48;
-$color__gloc_green_2: #9EC73B;

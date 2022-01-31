@@ -26,7 +26,7 @@
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
 		<nav id="site-navigation" class="main-navigation">
-		<input id="menu-toggle" type="checkbox" aria-controls="primary-menu" aria-expanded="false" />
+			<input id="menu-toggle" type="checkbox" aria-controls="primary-menu" aria-expanded="false" />
 			<label class='menu-button-container' for="menu-toggle">
 				<div class='menu-button'></div>
 			</label>
@@ -39,7 +39,7 @@
 				)
 			);
 			?>
-			</nav><!-- #site-navigation -->
+		</nav><!-- #site-navigation -->
 
 		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'gloc-2022'); ?></a>
 
@@ -54,9 +54,9 @@
 												?></p>
 				<?php endif; ?>
 			</div><!-- .site-branding -->
+			<div class="highlight-gallery">
+			<?php
+			echo do_shortcode('[slider_pro id=899]');
+			?>
+			</div>
 		</header><!-- #masthead -->
-
-
-		<?php
-		// echo do_shortcode('[slider_pro id=899]');
-		?>

@@ -453,7 +453,8 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-	background: #fff;
+	background-color: #3CAE48;
+	background: linear-gradient(to left, #3CAE48, #9EC73B);
 }
 
 hr {
@@ -714,7 +715,8 @@ textarea {
 }
 
 .main-navigation {
-	position: fixed;
+	position: sticky;
+	z-index: 999;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -727,6 +729,11 @@ textarea {
 	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	color: #FFF;
 	padding: 1em;
+	border-width: 0px;
+	border-bottom: 5px solid;
+	border-image-slice: 1;
+	border-bottom-width: 5px;
+	border-image-source: linear-gradient(to left, #AE3CA2, #f75818);
 }
 
 .main-navigation ul {
@@ -817,7 +824,8 @@ textarea {
 }
 
 .site-header {
-	background-color: white;
+	display: flex;
+	flex-direction: row;
 }
 
 /* Posts and pages
