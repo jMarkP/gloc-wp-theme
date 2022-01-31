@@ -396,6 +396,16 @@ h4,
 h5,
 h6 {
 	clear: both;
+	font-family: 'Source Serif 4', sans-serif;
+}
+
+h1 {
+	font-weight: 600;
+}
+
+h3 {
+	font-weight: 200;
+	font-style: italic;
 }
 
 p {
@@ -455,6 +465,7 @@ big {
 body {
 	background-color: #3CAE48;
 	background: linear-gradient(to left, #3CAE48, #9EC73B);
+	color: white;
 }
 
 hr {
@@ -825,7 +836,14 @@ textarea {
 
 .site-header {
 	display: flex;
+	flex-direction: column;
+	max-width: 960px;
+}
+
+.site-branding {
+	display: flex;
 	flex-direction: row;
+	width: 100%;
 }
 
 /* Posts and pages

@@ -18,6 +18,9 @@
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,600;1,200&display=swap" rel="stylesheet">
 
 	<?php wp_head(); ?>
 </head>
@@ -45,14 +48,17 @@
 
 		<header id="masthead" class="site-header">
 			<div class="site-branding">
-				<h1 class="site-title"><?php the_custom_logo(); ?></h1>
+				<?php the_custom_logo(); ?>
+				<div class="site-name">
+				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 				<?php
 				$gloc_2022_description = get_bloginfo('description', 'display');
 				if ($gloc_2022_description || is_customize_preview()) :
 				?>
-					<p class="site-description"><?php echo $gloc_2022_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
-												?></p>
+					<h3 class="site-description"><?php echo $gloc_2022_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+												?></h3>
 				<?php endif; ?>
+				</div>
 			</div><!-- .site-branding -->
 			<div class="highlight-gallery">
 			<?php

@@ -1,5 +1,12 @@
 .site-header {
     //background-color: white;
     display: flex;
+    flex-direction: column;
+    max-width: 960px;
+}
+
+.site-branding {
+    display: flex;
     flex-direction: row;
+    width: 100%;
 }
