@@ -15,40 +15,55 @@
 <html <?php language_attributes(); ?>>
 
 <head>
-	<meta charset="<?php bloginfo('charset'); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,600;1,200&display=swap" rel="stylesheet">
+  <meta charset="<?php bloginfo('charset'); ?>">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="profile" href="https://gmpg.org/xfn/11">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,600;1,200&display=swap"
+    rel="stylesheet">
 
-	<?php wp_head(); ?>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;700&display=swap" rel="stylesheet">
+
+  <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-	<?php wp_body_open(); ?>
+  <?php wp_body_open(); ?>
 
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'gloc-2022'); ?></a>
+  <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'gloc-2022'); ?></a>
 
-	<header class="header-bar">
-		<div class="site-branding">
-			<div class="site-logo">
-				<?php 
-				//the_custom_logo(); 
-				?>
-			</div>
-			<div class="site-title">
-				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-				<?php
-				$gloc_2022_description = get_bloginfo('description', 'display');
-				if ($gloc_2022_description || is_customize_preview()) :
-				?>
-				<h3 class="site-description"><?php echo $gloc_2022_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
-												?></h3>
-				<?php endif; ?>
-			</div>
-		</div>
-	</header>
+  <header class="header-bar">
+    <div class="header-row">
+
+      <div class="site-logo">
+        <?php 
+			the_custom_logo(); 
+			?>
+      </div>
+
+      <div class="site-title">
+        <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+        <h3 class="site-description"><?php bloginfo( 'description' );?></h3>
+      </div>
+    </div>
+
+    <div class="header-row">
+      <nav id="site-navigation" class="main-navigation">
+        <button class="menu-toggle" aria-controls="primary-menu"
+          aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'gloc-2022' ); ?></button>
+        <?php
+			wp_nav_menu(
+				array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+				)
+			);
+			?>
+      </nav><!-- #site-navigation -->
+    </div>
+  </header>
 
 
-	<div id="page" class="site">
+  <div id="page" class="site">
+		

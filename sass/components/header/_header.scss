@@ -1,27 +1,34 @@
 .header-bar {
-    height: 80px;
+    //height: 80px;
     position: sticky;
-	z-index: 999;
-	top: 0;
-	left: 0;
-	right: 0;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
 
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	background-color: $color__gloc_green_1;
-	background: linear-gradient(to left, $color__gloc_green_1, $color__gloc_green_2);
-	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	color: #FFF;
-	//height: 50px;
-	padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    // background-color: $color__gloc_green_1;
+    // background: linear-gradient(to left, $color__gloc_green_1, $color__gloc_green_2);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    //height: 50px;
+    padding: 1em;
 
-	border-width: 0px;
-	border-bottom: 5px solid;
-	border-image-slice: 1;
-	border-bottom-width: 5px;
-	border-image-source: $color__highlight-gradient;
+    // border-width: 0px;
+    // border-bottom: 5px solid;
+    // border-image-slice: 1;
+    // border-bottom-width: 5px;
+    // border-image-source: $color__highlight-gradient;
+
+    .header-row {
+        display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    }
 }
 
 .site-header {
@@ -43,16 +50,40 @@
             display: inline-block;
             height: 100%;
         }
-            
+
         .custom-logo-link .custom-logo {
             display: block;
             max-height: 100%;
             width: auto;
         }
     }
+}
 
-    h1, h3 {
+.site-title {
+    h1,
+    h3 {
         display: inline-block;
     }
 
+    h1 {
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 700;
+        font-size: 38px;
+
+        margin: 0;
+
+        // background: -webkit-linear-gradient($color__gloc_purple, $color__gloc_orange);
+        // -webkit-background-clip: text;
+        // background-clip: text;
+        // -webkit-text-fill-color: transparent;
+    }
+
+    h3 {
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+
+        margin: 0;
+
+    }
 }
