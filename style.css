@@ -908,7 +908,7 @@ textarea {
 }
 
 .callouts .callout-post .callout-img {
-	float: left;
+	max-width: 30%;
 }
 
 @keyframes tonext {
@@ -964,7 +964,7 @@ ol, li {
 
 .carousel {
 	position: relative;
-	padding-top: 75%;
+	height: 500px;
 	perspective: 100px;
 }
 
