@@ -36,7 +36,7 @@ for ($i = 0; $i < count($postslist); $i++)
       <a href="#carousel__slide<?php echo $next_i; ?>"
          class="carousel__next">Go to first slide</a> -->
       <?php 
-        //echo get_the_post_thumbnail( $post->ID, 'large', array( 'class' => 'callout-img' ) ); 
+        echo get_the_post_thumbnail( $post->ID, 'large', array( 'class' => 'callout-img' ) ); 
         ?>
       <div>
         <h2><?php echo $post->post_title; ?></h2>
