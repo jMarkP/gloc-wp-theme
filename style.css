@@ -735,7 +735,7 @@ textarea {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	background-color: #00BAF0;
+	background-color: #3CAE48;
 	background: linear-gradient(to left, #3CAE48, #9EC73B);
 	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	color: #FFF;
@@ -834,6 +834,29 @@ textarea {
 	flex: 1 0 50%;
 }
 
+.header-bar {
+	height: 80px;
+	position: sticky;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #3CAE48;
+	background: linear-gradient(to left, #3CAE48, #9EC73B);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #FFF;
+	padding: 1em;
+	border-width: 0px;
+	border-bottom: 5px solid;
+	border-image-slice: 1;
+	border-bottom-width: 5px;
+	border-image-source: linear-gradient(to left, #AE3CA2, #f75818);
+}
+
 .site-header {
 	display: flex;
 	flex-direction: column;
@@ -843,7 +866,26 @@ textarea {
 .site-branding {
 	display: flex;
 	flex-direction: row;
-	width: 100%;
+	align-items: center;
+}
+
+.site-branding .site-logo {
+	height: 100px;
+}
+
+.site-branding .site-logo .custom-logo-link {
+	display: inline-block;
+	height: 100%;
+}
+
+.site-branding .site-logo .custom-logo-link .custom-logo {
+	display: block;
+	max-height: 100%;
+	width: auto;
+}
+
+.site-branding h1, .site-branding h3 {
+	display: inline-block;
 }
 
 /* Posts and pages

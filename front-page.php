@@ -9,3 +9,9 @@
 
 get_header( 'front-page' );
 ?>
+
+<div class="highlight-gallery">
+    <?php
+    echo do_shortcode('[slider_pro id=899]');
+    ?>
+</div>

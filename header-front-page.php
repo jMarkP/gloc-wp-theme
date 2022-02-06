@@ -27,42 +27,28 @@
 
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
-	<div id="page" class="site">
-		<nav id="site-navigation" class="main-navigation">
-			<input id="menu-toggle" type="checkbox" aria-controls="primary-menu" aria-expanded="false" />
-			<label class='menu-button-container' for="menu-toggle">
-				<div class='menu-button'></div>
-			</label>
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'gloc-2022'); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
 
-		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'gloc-2022'); ?></a>
+	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'gloc-2022'); ?></a>
 
-		<header id="masthead" class="site-header">
-			<div class="site-branding">
-				<?php the_custom_logo(); ?>
-				<div class="site-name">
+	<header class="header-bar">
+		<div class="site-branding">
+			<div class="site-logo">
+				<?php 
+				//the_custom_logo(); 
+				?>
+			</div>
+			<div class="site-title">
 				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
 				<?php
 				$gloc_2022_description = get_bloginfo('description', 'display');
 				if ($gloc_2022_description || is_customize_preview()) :
 				?>
-					<h3 class="site-description"><?php echo $gloc_2022_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
+				<h3 class="site-description"><?php echo $gloc_2022_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped 
 												?></h3>
 				<?php endif; ?>
-				</div>
-			</div><!-- .site-branding -->
-			<div class="highlight-gallery">
-			<?php
-			echo do_shortcode('[slider_pro id=899]');
-			?>
 			</div>
-		</header><!-- #masthead -->
+		</div>
+	</header>
+
+
+	<div id="page" class="site">
