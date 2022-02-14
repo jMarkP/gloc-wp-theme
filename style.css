@@ -827,6 +827,10 @@ textarea {
 	flex: 1 0 50%;
 }
 
+body, html {
+	height: 100%;
+}
+
 .header-bar {
 	position: sticky;
 	z-index: 999;
@@ -834,15 +838,40 @@ textarea {
 	left: 0;
 	right: 0;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
+	flex-direction: row;
+	align-items: top;
 	justify-content: space-between;
 	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	color: #fff;
 	padding: 1em;
 }
 
-.header-bar .header-row {
+.hero-image {
+	/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+	/* Set a specific height */
+	height: 60%;
+	/* Position and center the image to scale nicely on all screens */
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.hero-text {
+	padding-top: 25px;
+	text-align: center;
+	color: white;
+}
+
+.header-rows {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	flex-grow: 1;
+}
+
+.header-row {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
@@ -861,19 +890,29 @@ textarea {
 	align-items: center;
 }
 
-.site-branding .site-logo {
-	height: 100px;
+.site-logo {
+	height: 150px;
 }
 
-.site-branding .site-logo .custom-logo-link {
+.site-logo a > img {
+	width: 100%;
+	max-height: 150px;
+}
+
+.site-logo .custom-logo-link {
 	display: inline-block;
 	height: 100%;
 }
 
-.site-branding .site-logo .custom-logo-link .custom-logo {
+.site-logo .custom-logo-link .custom-logo {
 	display: block;
 	max-height: 100%;
 	width: auto;
+}
+
+.site-title {
+	justify-content: flex-start;
+	align-items: baseline;
 }
 
 .site-title h1,
