@@ -661,12 +661,12 @@ textarea {
 }
 
 .menu-button::before {
-	content: '';
+	content: "";
 	margin-top: -8px;
 }
 
 .menu-button::after {
-	content: '';
+	content: "";
 	margin-top: 8px;
 }
 
@@ -726,18 +726,15 @@ textarea {
 }
 
 .main-navigation {
-	position: sticky;
-	z-index: 999;
-	top: 0;
-	left: 0;
-	right: 0;
+	font-family: "Josefin Sans", sans-serif;
+	font-weight: 400;
+	font-size: 18px;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-between;
-	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	color: #FFF;
-	padding: 1em;
+	color: #fff;
+	padding: 0;
 }
 
 .main-navigation ul {
@@ -749,12 +746,10 @@ textarea {
 }
 
 .main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
-	position: absolute;
-	top: 100%;
-	left: -999em;
-	z-index: 99999;
+	flex-direction: column;
+	display: none;
+	font-size: 14px;
 }
 
 .main-navigation ul ul ul {
@@ -768,17 +763,30 @@ textarea {
 	left: auto;
 }
 
-.main-navigation ul ul a {
-	width: 200px;
-}
-
 .main-navigation ul li:hover > ul,
 .main-navigation ul li.focus > ul {
 	left: auto;
 }
 
 .main-navigation li {
-	margin: 0 1rem;
+	margin: 0;
+	margin-right: 2em;
+}
+
+.main-navigation li a {
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	border-bottom: 3px solid transparent;
+}
+
+.main-navigation li:hover > a,
+.main-navigation li.focus > a {
+	border-bottom: 3px white solid;
+}
+
+.main-navigation li:hover > ul,
+.main-navigation li.focucs > ul {
+	display: flex;
 }
 
 .main-navigation a {
@@ -841,14 +849,12 @@ body, html {
 	flex-direction: row;
 	align-items: top;
 	justify-content: space-between;
-	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	color: #fff;
 	padding: 1em;
 }
 
 .hero-image {
-	/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-	background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+	background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.7) 36%, rgba(0, 0, 0, 0.3) 100%), url("https://gloc.local:8890/wp-content/uploads/2021/10/buorngiono-gondolieri-1536x1024.jpg");
 	/* Set a specific height */
 	height: 60%;
 	/* Position and center the image to scale nicely on all screens */
@@ -858,17 +864,12 @@ body, html {
 	position: relative;
 }
 
-.hero-text {
-	padding-top: 25px;
-	text-align: center;
-	color: white;
-}
-
 .header-rows {
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
 	flex-grow: 1;
+	padding-left: 1em;
 }
 
 .header-row {
@@ -892,6 +893,7 @@ body, html {
 
 .site-logo {
 	height: 150px;
+	min-width: 300px;
 }
 
 .site-logo a > img {
@@ -925,6 +927,7 @@ body, html {
 	font-weight: 700;
 	font-size: 38px;
 	margin: 0;
+	margin-right: 0.5em;
 }
 
 .site-title h3 {

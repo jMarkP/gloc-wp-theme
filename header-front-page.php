@@ -23,7 +23,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,wght@0,600;1,200&display=swap"
     rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700&display=swap" rel="stylesheet">
 
   <?php wp_head(); ?>
 </head>

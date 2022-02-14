@@ -3,7 +3,6 @@ body, html {
 }
 
 .header-bar {
-    //height: 80px;
     position: sticky;
     z-index: 999;
     top: 0;
@@ -14,23 +13,12 @@ body, html {
     flex-direction: row;
     align-items: top;
     justify-content: space-between;
-    // background-color: $color__gloc_green_1;
-    // background: linear-gradient(to left, $color__gloc_green_1, $color__gloc_green_2);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: #fff;
-    //height: 50px;
     padding: 1em;
-
-    // border-width: 0px;
-    // border-bottom: 5px solid;
-    // border-image-slice: 1;
-    // border-bottom-width: 5px;
-    // border-image-source: $color__highlight-gradient;
 }
 
 .hero-image {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 36%, rgba(0,0,0,0.3) 100%), url("https://gloc.local:8890/wp-content/uploads/2021/10/buorngiono-gondolieri-1536x1024.jpg");
   
     /* Set a specific height */
     height: 60%;
@@ -42,31 +30,19 @@ body, html {
     position: relative;
   }
 
-  .hero-text {
-    // text-align: center;
-    // position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
-    // color: white;
-
-    padding-top: 25px;
-	text-align: center;
-	color: white;
-  }
-
 .header-rows {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     flex-grow: 1;
+    padding-left: 1em;
 }
 
 .header-row {
     display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .site-header {
@@ -83,7 +59,8 @@ justify-content: space-between;
 }
 
 .site-logo {
-    height: 150px;    
+    height: 150px;
+    min-width: 300px;
 
     a > img {
         width: 100%;
@@ -117,11 +94,7 @@ justify-content: space-between;
         font-size: 38px;
 
         margin: 0;
-
-        // background: -webkit-linear-gradient($color__gloc_purple, $color__gloc_orange);
-        // -webkit-background-clip: text;
-        // background-clip: text;
-        // -webkit-text-fill-color: transparent;
+        margin-right: 0.5em;
     }
 
     h3 {
@@ -130,6 +103,5 @@ justify-content: space-between;
         font-style: normal;
 
         margin: 0;
-
     }
 }
