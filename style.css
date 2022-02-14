@@ -463,9 +463,8 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-	background-color: #3CAE48;
-	background: linear-gradient(to left, #3CAE48, #9EC73B);
-	color: white;
+	background-color: white;
+	color: black;
 }
 
 hr {
