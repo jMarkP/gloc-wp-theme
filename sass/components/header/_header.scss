@@ -1,66 +1,35 @@
-body, html {
+body,
+html {
     height: 100%;
 }
 
 .header-bar {
-    position: sticky;
-    z-index: 999;
-    top: 0;
-    left: 0;
-    right: 0;
-
     display: flex;
-    flex-direction: row;
-    align-items: top;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     color: #fff;
     padding: 1em;
 }
 
 .hero-image {
-    background-image: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.7) 36%, rgba(0,0,0,0.3) 100%), url("https://gloc.local:8890/wp-content/uploads/2021/10/buorngiono-gondolieri-1536x1024.jpg");
-  
-    /* Set a specific height */
+    background-image: linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.9) 0%,
+            rgba(0, 0, 0, 0.7) 36%,
+            rgba(0, 0, 0, 0.3) 100%
+        ),
+        url("https://gloc.local:8890/wp-content/uploads/2021/10/buorngiono-gondolieri-1536x1024.jpg");
+
     height: 60%;
-  
-    /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-  }
-
-.header-rows {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    flex-grow: 1;
-    padding-left: 1em;
-}
-
-.header-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.site-header {
-    //background-color: white;
-    display: flex;
-    flex-direction: column;
-    max-width: 960px;
-}
-
-.site-branding {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 .site-logo {
-    height: 150px;
-    min-width: 300px;
+    height: 100px;
 
     a > img {
         width: 100%;
@@ -79,19 +48,22 @@ body, html {
     }
 }
 
-.site-title {
+.site-branding {
+    display: flex;
+    flex-direction: column;
     justify-content: flex-start;
-    align-items: baseline;
+    align-items: center;
 
     h1,
     h3 {
-        display: inline-block;
+        display: block;
+        text-align: center;
     }
 
     h1 {
         font-family: "Josefin Sans", sans-serif;
         font-weight: 700;
-        font-size: 38px;
+        font-size: 24px;
 
         margin: 0;
         margin-right: 0.5em;
@@ -101,7 +73,63 @@ body, html {
         font-family: "Josefin Sans", sans-serif;
         font-weight: 200;
         font-style: normal;
+        font-size: 18px;
 
         margin: 0;
+    }
+}
+
+@media (min-width: 800px) {
+    .header-bar {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .header-rows {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        flex-grow: 1;
+        padding-left: 1em;
+    }
+
+    .header-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .site-header {
+        display: flex;
+        flex-direction: column;
+        max-width: 960px;
+    }
+
+    .site-logo {
+        height: 150px;
+        min-width: 300px;
+    }
+
+    .site-branding {
+        justify-content: flex-start;
+        align-items: baseline;
+
+        h1,
+        h3 {
+            display: inline-block;
+        }
+
+        h1 {
+            margin: 0;
+            margin-right: 0.5em;
+            font-size: 38px;
+        }
+
+        h3 {
+            margin: 0;
+            font-size: 18px;
+        }
     }
 }

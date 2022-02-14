@@ -41,7 +41,7 @@
     ?>
     </div>
     <div class="header-rows">
-      <div class="site-title header-row">
+      <div class="site-branding header-row">
         <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
         <h3 class="site-description"><?php bloginfo( 'description' );?></h3>
       </div>
