@@ -384,7 +384,7 @@ select,
 optgroup,
 textarea {
 	color: #404040;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+	font-family: "Open Sans Condensed", sans-serif;
 	font-size: 1rem;
 	line-height: 1.5;
 }
@@ -396,16 +396,8 @@ h4,
 h5,
 h6 {
 	clear: both;
-	font-family: 'Source Serif 4', sans-serif;
-}
-
-h1 {
-	font-weight: 600;
-}
-
-h3 {
-	font-weight: 200;
-	font-style: italic;
+	font-family: "Josefin Sans", sans-serif;
+	font-weight: 700;
 }
 
 p {
@@ -628,6 +620,12 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
+.site .site-main {
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
