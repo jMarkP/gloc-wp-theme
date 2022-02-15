@@ -182,3 +182,47 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+
+
+function add_hero_controls($wp_customize) {
+	$wp_customize->add_section('hero', array(
+		'title' => 'Hero section',
+		'description' => 'Add hero image to your website',
+		'capability' => 'edit_theme_options'
+	));
+
+	$wp_customize->add_setting('hero-image', array(
+		'type' => 'theme_mod',
+		'capability' => 'edit_theme_options',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'hero-image', array(
+		'section' => 'hero',
+		'label' => 'Hero image'
+	)));
+}
+add_action('customize_register', 'add_hero_controls');
+
+function the_hero_style() {
+	$linear_gradient = 'linear-gradient(180deg, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.0) 80%)'; 
+  $url = get_theme_mod('hero-image');
+  ?>
+  <style>
+    .header-bar {
+      <?php
+      if ($url != '') {
+      ?>
+        background-image: <?php echo $linear_gradient ?>, url("<?php echo $url ?>");
+      <?php
+      } else {
+      ?>
+        background-image: <?php echo $linear_gradient ?>;  
+      }
+      <?php
+      }
+      ?>
+    }
+  </style>
+	<?php
+}
