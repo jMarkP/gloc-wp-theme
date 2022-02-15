@@ -209,7 +209,7 @@ function the_hero_style() {
   $url = get_theme_mod('hero-image');
   ?>
   <style>
-    .header-bar {
+    .hero {
       <?php
       if ($url != '') {
       ?>

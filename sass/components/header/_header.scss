@@ -3,19 +3,25 @@ html {
     height: 100%;
 }
 
+
+.hero {
+    color: #fff;
+    padding: 1em;
+
+    height: 100%;
+    background-position-x: center;
+    background-position-y: 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
 .header-bar {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    color: #fff;
-    padding: 1em;
-
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+    
 }
 
 .header-rows {
@@ -78,15 +84,19 @@ html {
 }
 
 @media (min-width: 800px) {
+    .hero {
+        height: 60%;
+    }
     .header-bar {
         flex-direction: row;
         align-items: flex-start;
         justify-content: space-between;
-        height: 60%;
     }
+
 
     .header-rows {
         align-items: stretch;
+        margin-top: 1em;
     }
 
     .header-row {
