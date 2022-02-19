@@ -385,7 +385,7 @@ optgroup,
 textarea {
 	color: #404040;
 	font-family: "Open Sans Condensed", sans-serif;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 	line-height: 1.5;
 }
 
@@ -408,6 +408,29 @@ h1 {
 	-moz-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	-moz-text-fill-color: transparent;
+}
+
+.site-main h1 {
+	font-size: 42px;
+}
+
+.site-main h2,
+.site-main h3 {
+	text-shadow: 1px 1px 0px #AE3CA2, 2px 2px 0px #f75818;
+}
+
+.site-main h2 {
+	font-size: 36px;
+}
+
+.site-main h3 {
+	font-size: 32px;
+}
+
+@media screen and (min-width: 800px) {
+	.site-main h1 {
+		font-size: 50px;
+	}
 }
 
 p {
@@ -466,9 +489,9 @@ big {
 --------------------------------------------- */
 body {
 	background: #083438;
-	background: -moz-linear-gradient(90deg, #083438 0%, #0f1626 33%, #0f1728 66%, #083438 100%);
-	background: -webkit-linear-gradient(90deg, #083438 0%, #0f1626 33%, #0f1728 66%, #083438 100%);
-	background: linear-gradient(90deg, #083438 0%, #0f1626 33%, #0f1728 66%, #083438 100%);
+	background: -moz-linear-gradient(90deg, #083438 0%, #0f1626 33%, #0f1626 66%, #083438 100%);
+	background: -webkit-linear-gradient(90deg, #083438 0%, #0f1626 33%, #0f1626 66%, #083438 100%);
+	background: linear-gradient(90deg, #083438 0%, #0f1626 33%, #0f1626 66%, #083438 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#083438",endColorstr="#083438",GradientType=1);
 	color: white;
 }
@@ -636,24 +659,19 @@ textarea {
 --------------------------------------------------------------*/
 .site-main {
 	max-width: 1200px;
-	margin-left: 1em;
-	margin-right: 1em;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 2em;
 	padding-top: 1em;
-	background: linear-gradient(to left, #2f8838, #7fa12e);
-	margin-top: -3em;
-	position: relative;
-	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-	border: white solid 0.2em;
+}
+
+.entry-content {
+	text-shadow: 0px 2px 0px black;
 }
 
 @media screen and (min-width: 1260px) {
 	.site-main {
 		width: 1200px;
-		margin-left: auto;
-		margin-right: auto;
 	}
 }
 
