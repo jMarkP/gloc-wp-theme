@@ -401,16 +401,13 @@ h6 {
 	display: inline-block;
 }
 
-h1 {
+.site-main h1 {
 	background-color: #3CAE48;
 	background-image: linear-gradient(45deg, #3CAE48, #9EC73B);
 	-webkit-background-clip: text;
 	-moz-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	-moz-text-fill-color: transparent;
-}
-
-.site-main h1 {
 	font-size: 42px;
 }
 
@@ -903,6 +900,7 @@ html {
 	font-size: 24px;
 	margin: 0;
 	margin-right: 0.5em;
+	color: white;
 }
 
 .site-branding h3 {
@@ -1317,7 +1315,7 @@ ol, li {
 .tickets-call-to-action {
 	display: inline-block;
 	background: linear-gradient(to left, #f75818, #AE3CA2);
-	border: 3px solid white;
+	border: 2px solid white;
 	text-decoration: none;
 	font-weight: 700;
 	padding: 0.5em 1em;
@@ -1327,13 +1325,15 @@ ol, li {
 .show-banner {
 	max-width: 1200px;
 	margin-top: -100px;
+	margin-left: 1em;
+	margin-right: 1em;
 	position: relative;
-	margin-left: auto;
-	margin-right: auto;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
 	align-items: stretch;
+	box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 9px;
 }
 
 .show-banner a {
@@ -1348,10 +1348,21 @@ ol, li {
 	background: linear-gradient(to left, #f75818, #AE3CA2);
 	padding: 0.5em;
 	font-family: "Josefin Sans", sans-serif;
+	border-top-left-radius: 9px;
+	border-top-right-radius: 9px;
 }
 
 .show-banner img {
-	border-radius: 9px;
+	border-bottom-left-radius: 9px;
+	border-bottom-right-radius: 9px;
+	margin-bottom: -9px;
+}
+
+@media (min-width: 1216px) {
+	.show-banner {
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 /*--------------------------------------------------------------

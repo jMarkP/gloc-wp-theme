@@ -10,12 +10,10 @@ h6 {
 	display: inline-block;
 }
 
-h1 {
-	@include text-gradient($color__gloc_green_1, $color__gloc_green_2)
-}
 
 .site-main{ 
 	h1 {
+		@include text-gradient($color__gloc_green_1, $color__gloc_green_2);
 		font-size: 42px;
 	}
 
