@@ -398,6 +398,16 @@ h6 {
 	clear: both;
 	font-family: "Josefin Sans", sans-serif;
 	font-weight: 700;
+	display: inline-block;
+}
+
+h1 {
+	background-color: #3CAE48;
+	background-image: linear-gradient(45deg, #3CAE48, #9EC73B);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
 }
 
 p {
@@ -420,7 +430,7 @@ address {
 }
 
 pre {
-	background: #eee;
+	background: #111;
 	font-family: "Courier 10 Pitch", courier, monospace;
 	line-height: 1.6;
 	margin-bottom: 1.6em;
@@ -444,7 +454,7 @@ acronym {
 
 mark,
 ins {
-	background: #fff9c0;
+	background: #000930;
 	text-decoration: none;
 }
 
@@ -455,12 +465,16 @@ big {
 /* Elements
 --------------------------------------------- */
 body {
-	background-color: white;
-	color: black;
+	background: #083438;
+	background: -moz-linear-gradient(90deg, #083438 0%, #0f1626 33%, #0f1728 66%, #083438 100%);
+	background: -webkit-linear-gradient(90deg, #083438 0%, #0f1626 33%, #0f1728 66%, #083438 100%);
+	background: linear-gradient(90deg, #083438 0%, #0f1626 33%, #0f1728 66%, #083438 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#083438",endColorstr="#083438",GradientType=1);
+	color: white;
 }
 
 hr {
-	background-color: #ccc;
+	background-color: #333;
 	border: 0;
 	height: 1px;
 	margin-bottom: 1.5em;
@@ -545,7 +559,7 @@ input[type="submit"] {
 	border: 1px solid;
 	border-color: #ccc #ccc #bbb;
 	border-radius: 3px;
-	background: #e6e6e6;
+	background: #262626;
 	color: rgba(0, 0, 0, 0.8);
 	line-height: 1;
 	padding: 0.6em 1em 0.4em;
@@ -774,6 +788,17 @@ html {
 	position: relative;
 }
 
+.hero:after {
+	background: linear-gradient(90deg, #AE3CA2, #f75818);
+	content: "";
+	display: block;
+	height: 0.5em;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	margin-left: -1em;
+}
+
 .header-bar {
 	display: flex;
 	flex-direction: column;
@@ -786,7 +811,6 @@ html {
 	flex-direction: column;
 	align-items: center;
 	flex-grow: 1;
-	padding-left: 1em;
 }
 
 .site-logo {
@@ -850,6 +874,7 @@ html {
 	.header-rows {
 		align-items: stretch;
 		margin-top: 1em;
+		padding-left: 1em;
 	}
 	.header-row {
 		display: flex;
@@ -887,6 +912,9 @@ html {
 }
 
 @media (min-width: 1260px) {
+	.header-rows {
+		padding-left: 2em;
+	}
 	.site-branding h1 {
 		font-size: 38px;
 	}
@@ -1245,7 +1273,7 @@ ol, li {
 }
 
 .screen-reader-text:focus {
-	background-color: #f1f1f1;
+	background-color: #0f0f0f;
 	border-radius: 3px;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;

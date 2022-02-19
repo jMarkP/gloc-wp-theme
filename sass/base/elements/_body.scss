@@ -1,4 +1,4 @@
 body {
-	background-color: $color__background-body; // Fallback for when there is no custom background color defined.
-	color: black;
+	@include page-background;
+	color: white;
 }

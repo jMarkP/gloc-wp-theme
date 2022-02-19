@@ -3,7 +3,6 @@ html {
     height: 100%;
 }
 
-
 .hero {
     color: #fff;
     padding: 1em;
@@ -14,6 +13,17 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+
+    &:after {
+        background: linear-gradient(90deg, $color__gloc_purple, $color__gloc_orange);
+        content:"";
+        display: block;
+        height: 0.5em;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        margin-left: -1em;
+    }
 }
 
 .header-bar {
@@ -29,7 +39,6 @@ html {
     flex-direction: column;
     align-items: center;
     flex-grow: 1;
-    padding-left: 1em;
 }
 
 .site-logo {
@@ -97,6 +106,7 @@ html {
     .header-rows {
         align-items: stretch;
         margin-top: 1em;
+        padding-left: 1em;
     }
 
     .header-row {
@@ -141,6 +151,9 @@ html {
 }
 
 @media (min-width: 1260px) {
+    .header-rows {
+        padding-left: 2em;
+    }
     .site-branding {
         h1 {
             font-size: 38px;

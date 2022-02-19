@@ -18,13 +18,31 @@ $color__background-gradient: linear-gradient(to left, $color__gloc_green_1, $col
 $color__background-gradient-light: linear-gradient(to left, $color__gloc_green_1_light, $color__gloc_green_2_light);
 $color__highlight-gradient: linear-gradient(to left, $color__gloc_purple, $color__gloc_orange);
 
+$color__background-gradient-black: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
 
-$color__background-body: white;
-$color__background-screen: #f1f1f1;
-$color__background-hr: #ccc;
-$color__background-button: #e6e6e6;
-$color__background-pre: #eee;
-$color__background-ins: #fff9c0;
+@mixin page-background {
+  background: rgb(8,52,56);
+  background: -moz-linear-gradient(90deg, rgba(8,52,56,1) 0%, rgba(15,22,38,1) 33%, rgba(15,23,40,1) 66%, rgba(8,52,56,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(8,52,56,1) 0%, rgba(15,22,38,1) 33%, rgba(15,23,40,1) 66%, rgba(8,52,56,1) 100%);
+  background: linear-gradient(90deg, rgba(8,52,56,1) 0%, rgba(15,22,38,1) 33%, rgba(15,23,40,1) 66%, rgba(8,52,56,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#083438",endColorstr="#083438",GradientType=1);
+}
+
+@mixin text-gradient($startColor, $endColor) {
+  background-color: $startColor;
+  background-image: linear-gradient(45deg, $startColor, $endColor);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+$color__background-body: black;
+$color__background-screen: #0f0f0f;
+$color__background-hr: #333;
+$color__background-button: #262626;
+$color__background-pre: #111;
+$color__background-ins: #000930;
 
 $color__text-screen: #21759b;
 $color__text-input: #666;

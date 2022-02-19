@@ -58,7 +58,7 @@
 
 		&:hover > a,
 		&.focus > a {
-			border-bottom: 3px white solid;	
+			border-bottom: 3px white solid;
 			color: rgba(255, 255, 255, 1);
 		}
 
@@ -84,7 +84,7 @@
 
 		li {
 			margin-right: 2em;
-	
+
 			a {
 				padding-top: 0.5em;
 			}
@@ -98,15 +98,13 @@
 	display: block;
 }
 
-//@media screen and (min-width: 37.5em) {
-	.menu-toggle {
-		display: none;
-	}
+.menu-toggle {
+	display: none;
+}
 
-	.main-navigation ul {
-		display: flex;
-	}
-//}
+.main-navigation ul {
+	display: flex;
+}
 
 .comment-navigation,
 .posts-navigation,
