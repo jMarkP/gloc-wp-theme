@@ -1,10 +1,12 @@
 
 $color__gloc_green_1: #3CAE48;
 $color__gloc_green_2: #9EC73B;
+$color__gloc_purple: #AE3CA2;
+$color__gloc_orange: #f75818;
 
 $col-primary: #3cae48ff;
 $col-secondary: #9ec73bff;
-$col-highlight: #ce4760ff;
+$col-highlight: $color__gloc_orange;
 $col-blue: #456990ff;
 $col-grey: #9aa0a8ff;
 
@@ -14,13 +16,11 @@ $color__gloc_green_2_light: lighten(#9EC73B, 10%);
 $color__gloc_green_1_dark: darken(#3CAE48, 10%);
 $color__gloc_green_2_dark: darken(#9EC73B, 10%);
 
-$color__gloc_purple: #AE3CA2;
-$color__gloc_orange: #f75818;
 
 $color__background-gradient: linear-gradient(to left, $color__gloc_green_1, $color__gloc_green_2);
 $color__background-gradient-light: linear-gradient(to left, $color__gloc_green_1_light, $color__gloc_green_2_light);
 $color__background-gradient-dark: linear-gradient(to left, $color__gloc_green_1_dark, $color__gloc_green_2_dark);
-$color__highlight-gradient: linear-gradient(to left, $color__gloc_purple, $color__gloc_orange);
+$color__highlight-gradient: linear-gradient(to left, $color__gloc_orange, $color__gloc_purple);
 
 $color__page-background-outer: rgba(8,52,56,1);
 $color__page-background-inner: rgba(15,22,38,1);
@@ -61,7 +61,7 @@ $color__page-background-inner: rgba(15,22,38,1);
 $color__background-body: black;
 $color__background-screen: #0f0f0f;
 $color__background-hr: #333;
-$color__background-button: #262626;
+$color__background-button: $color__gloc_orange;
 $color__background-pre: #111;
 $color__background-ins: #000930;
 

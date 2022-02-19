@@ -1,6 +1,6 @@
 /*!
 Theme Name: GLOC 2022
-Theme URI: https://underscores.me/
+Theme URI: https://github.com/jMarkP/gloc-wp-theme
 Author: J. Mark Pim
 Description: Theme for GLOC's website
 Version: 1.0.0
@@ -579,11 +579,10 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: 1px solid;
+	border: 2px solid;
 	border-color: #ccc #ccc #bbb;
-	border-radius: 3px;
-	background: #262626;
-	color: rgba(0, 0, 0, 0.8);
+	background: #f75818;
+	color: rgba(255, 255, 255, 0.8);
 	line-height: 1;
 	padding: 0.6em 1em 0.4em;
 }
@@ -978,6 +977,15 @@ html {
 	}
 }
 
+.site-footer {
+	background: linear-gradient(to left, #f75818, #AE3CA2);
+}
+
+.site-info {
+	padding: 0.5em;
+	text-align: right;
+}
+
 .callouts {
 	display: flex;
 	flex-direction: row;
@@ -1200,6 +1208,16 @@ ol, li {
 
 .widget select {
 	max-width: 100%;
+}
+
+.widget-horizontal {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.widget-horizontal section {
+	margin: 1em;
 }
 
 /* Media

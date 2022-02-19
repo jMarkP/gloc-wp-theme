@@ -6,3 +6,13 @@
 		max-width: 100%;
 	}
 }
+
+.widget-horizontal {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	section {
+		margin: 1em;
+	}
+}

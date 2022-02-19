@@ -12,6 +12,8 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
+
+		<?php get_sidebar( 'footer' ); ?>
 		<div class="site-info">
 			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'gloc-2022' ) ); ?>">
 				<?php
@@ -22,7 +24,7 @@
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'gloc-2022' ), 'gloc-2022', '<a href="https://automattic.com/">Automattic</a>' );
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'gloc-2022' ), 'gloc-2022', 'J. Mark Pim' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
