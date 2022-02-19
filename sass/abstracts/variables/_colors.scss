@@ -37,6 +37,23 @@ $color__background-gradient-black: linear-gradient(90deg, #4b6cb7 0%, #182848 10
   -moz-text-fill-color: transparent;
 }
 
+@mixin bottom-border-gradient($startColor, $endColor, $height: 0.5em) {
+  &:after {
+    background: linear-gradient(90deg, $startColor, $endColor);
+    content:"";
+    display: block;
+    height: $height;
+    width: 100%;
+    //position: absolute;
+    bottom: 0;
+  }
+}
+
+@mixin text-and-underline-gradient($startColor, $endColor, $height: 0.5em) {
+  @include text-gradient($startColor, $endColor);
+  @include bottom-border-gradient($startColor, $endColor, $height);
+}
+
 $color__background-body: black;
 $color__background-screen: #0f0f0f;
 $color__background-hr: #333;
