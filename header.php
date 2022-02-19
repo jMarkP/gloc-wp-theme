@@ -83,11 +83,11 @@
   if ($upcoming_show_enabled) {
   ?>
   <div class="show-banner">
-    <div class="label">
-      Come see our next show, <?php echo get_theme_mod('upcoming-show-name') ?>. 
-      From <?php echo get_theme_mod('upcoming-show-start-date') ?> to <?php echo get_theme_mod('upcoming-show-end-date') ?>
-    </div>
     <a href="<?php the_ticket_link() ?>">
+    <div class="label">
+      Come see our next show, <strong><?php echo get_theme_mod('upcoming-show-name') ?></strong>.
+      From <?php echo get_theme_mod('upcoming-show-start-date') ?> to <?php echo get_theme_mod('upcoming-show-end-date') ?>.
+    </div>
       <img src="<?php echo get_theme_mod('upcoming-show-banner') ?>" class="banner-image"></img>
     </a>
   </div>

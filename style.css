@@ -1331,21 +1331,26 @@ ol, li {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.show-banner a {
+	text-decoration: none;
+}
+
+.show-banner a:hover, .show-banner a:focus, .show-banner a:visited {
+	color: white;
 }
 
 .show-banner .label {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 10;
-	background-color: #f75818;
+	background: linear-gradient(to left, #f75818, #AE3CA2);
 	padding: 0.5em;
 	font-family: "Josefin Sans", sans-serif;
-	margin-top: -1em;
 }
 
 .show-banner img {
-	height: 200px;
 	border-radius: 9px;
 }
 

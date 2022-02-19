@@ -16,6 +16,12 @@
 }
 
 .show-banner {
+  a {
+    text-decoration: none;
+    &:hover, &:focus, &:visited{
+      color: white;
+    }
+  }
   max-width: 1200px;
   margin-top: -100px;
   position: relative;
@@ -23,18 +29,22 @@
   margin-right: auto;
   text-align: center;
 
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
   .label {
-    position: absolute;
-    top:0;
-    left:0;
-    z-index: 10;
-    background-color: $color__gloc_orange;
+  //   position: absolute;
+  //   top:0;
+  //   left:0;
+  //   z-index: 10;
+    background: $color__highlight-gradient;
     padding: 0.5em;
     font-family: $font__heading;
-    margin-top: -1em;
+    // margin-top: -1em;
   }
   img {
-    height: 200px;
+    //height: 200px;
     border-radius: 9px;
   }
 }
