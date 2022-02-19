@@ -88,7 +88,7 @@ html {
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: $mobile-width-limit) {
     .hero {
         height: 60%;
     }
@@ -149,6 +149,10 @@ html {
 @media (min-width: 1320px) {
     .hero {
         padding: 2em;
+
+        &:after {
+            margin-left: -2em;
+        }
     }
     .header-rows {
         padding-left: 2em;

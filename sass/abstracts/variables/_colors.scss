@@ -11,11 +11,15 @@ $col-grey: #9aa0a8ff;
 $color__gloc_green_1_light: lighten(#3CAE48, 10%);
 $color__gloc_green_2_light: lighten(#9EC73B, 10%);
 
+$color__gloc_green_1_dark: darken(#3CAE48, 10%);
+$color__gloc_green_2_dark: darken(#9EC73B, 10%);
+
 $color__gloc_purple: #AE3CA2;
 $color__gloc_orange: #f75818;
 
 $color__background-gradient: linear-gradient(to left, $color__gloc_green_1, $color__gloc_green_2);
 $color__background-gradient-light: linear-gradient(to left, $color__gloc_green_1_light, $color__gloc_green_2_light);
+$color__background-gradient-dark: linear-gradient(to left, $color__gloc_green_1_dark, $color__gloc_green_2_dark);
 $color__highlight-gradient: linear-gradient(to left, $color__gloc_purple, $color__gloc_orange);
 
 $color__background-gradient-black: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
@@ -44,7 +48,6 @@ $color__background-gradient-black: linear-gradient(90deg, #4b6cb7 0%, #182848 10
     display: block;
     height: $height;
     width: 100%;
-    //position: absolute;
     bottom: 0;
   }
 }
@@ -64,8 +67,8 @@ $color__background-ins: #000930;
 $color__text-screen: #21759b;
 $color__text-input: #666;
 $color__text-input-focus: #111;
-$color__link: #4169e1; //royalblue
-$color__link-visited: #800080; //purple
+$color__link: white; 
+$color__link-visited: white; //purple
 $color__link-hover: #191970; //midnightblue
 $color__text-main: #404040;
 

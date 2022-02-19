@@ -385,7 +385,7 @@ optgroup,
 textarea {
 	color: #404040;
 	font-family: "Open Sans Condensed", sans-serif;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	line-height: 1.5;
 }
 
@@ -531,11 +531,11 @@ table {
 /* Links
 --------------------------------------------- */
 a {
-	color: #4169e1;
+	color: white;
 }
 
 a:visited {
-	color: #800080;
+	color: white;
 }
 
 a:hover, a:focus, a:active {
@@ -634,11 +634,27 @@ textarea {
 /*--------------------------------------------------------------
 # Layouts
 --------------------------------------------------------------*/
-.site .site-main {
+.site-main {
 	max-width: 1200px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 1em;
+	margin-right: 1em;
 	padding: 2em;
+	padding-top: 1em;
+	background: linear-gradient(to left, #2f8838, #7fa12e);
+	margin-top: -3em;
+	position: relative;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+	border: white solid 0.2em;
+}
+
+@media screen and (min-width: 1260px) {
+	.site-main {
+		width: 1200px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 }
 
 /*--------------------------------------------------------------
@@ -933,6 +949,9 @@ html {
 	.hero {
 		padding: 2em;
 	}
+	.hero:after {
+		margin-left: -2em;
+	}
 	.header-rows {
 		padding-left: 2em;
 	}
@@ -1138,12 +1157,6 @@ ol, li {
 
 .updated:not(.published) {
 	display: none;
-}
-
-.page-content,
-.entry-content,
-.entry-summary {
-	margin: 1.5em 0 0;
 }
 
 .page-links {
