@@ -204,25 +204,145 @@ function add_hero_controls($wp_customize) {
 }
 add_action('customize_register', 'add_hero_controls');
 
+
+function add_upcoming_show_controls($wp_customize) {
+	$wp_customize->add_section('upcoming-show', array(
+		'title' => 'Upcoming show',
+		'description' => 'Add details about any upcoming show',
+		'capability' => 'edit_theme_options'
+	));
+
+	// Is enabled?
+	$wp_customize->add_setting('upcoming-show-enabled', array(
+		'type' => 'theme_mod',
+		'capability' => 'edit_theme_options',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'upcoming-show-enabled', array(
+			'label'    => 'Enable upcoming show ads',
+			'description' => 'Is there an upcoming show we are currently selling tickets for?', 
+			'section'  => 'upcoming-show',
+			'settings' => 'upcoming-show-enabled',
+			'type'     => 'checkbox',
+		)));
+
+	// Show name
+	$wp_customize->add_setting('upcoming-show-name', array(
+		'type' => 'theme_mod',
+		'capability' => 'edit_theme_options',
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'upcoming-show-name', array(
+		'label'    => 'Show name',
+		'description' => 'The name of the show, e.g. "The Sorcerer"', 
+		'section'  => 'upcoming-show',
+		'settings' => 'upcoming-show-name',
+		'type'     => 'input',
+	)));
+
+	// Show dates
+	$wp_customize->add_setting( 'upcoming-show-start-date', array(
+		'capability' => 'edit_theme_options',
+		'sanitize_callback' => 'gloc_2022_sanitize_date',
+	) );
+	
+	$wp_customize->add_control( 'upcoming-show-start-date', array(
+		'type' => 'date',
+		'section' => 'upcoming-show', // Add a default or your own section
+		'label' => 'Start date',
+		'description' => 'When is the opening night of the show',
+		'input_attrs' => array(
+			'placeholder' => __( 'dd/mm/yyyy' ),
+		),
+	));
+	$wp_customize->add_setting( 'upcoming-show-end-date', array(
+		'capability' => 'edit_theme_options',
+		'sanitize_callback' => 'gloc_2022_sanitize_date',
+	) );
+	
+	$wp_customize->add_control( 'upcoming-show-end-date', array(
+		'type' => 'date',
+		'section' => 'upcoming-show', // Add a default or your own section
+		'label' => 'End date',
+		'description' => 'When is the last night of the show',
+		'input_attrs' => array(
+			'placeholder' => __( 'dd/mm/yyyy' ),
+		),
+	));
+
+	// Banner
+	$wp_customize->add_setting('upcoming-show-banner', array(
+		'type' => 'theme_mod',
+		'capability' => 'edit_theme_options',
+	));
+
+	$wp_customize->add_control(new WP_Customize_Image_Control($wp_customize, 'upcoming-show-banner', array(
+		'section' => 'upcoming-show',
+		'label' => 'Upcoming show banner',
+		'description' => 'Add a banner, size 1200x200px'
+	)));
+
+	// Link to TicketSource
+	$wp_customize->add_setting('upcoming-show-ticket-link', array(
+		'type' => 'theme_mod',
+		'capability' => 'edit_theme_options',
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'upcoming-show-ticket-link', array(
+		'label'    => 'Link to tickets',
+		'description' => 'URL to buy tickets. Should be a link to the TicketSource page for the show, not the general GLOC TicketSource page', 
+		'section'  => 'upcoming-show',
+		'settings' => 'upcoming-show-ticket-link',
+		'type'     => 'input',
+	)));
+
+
+}
+add_action('customize_register', 'add_upcoming_show_controls');
+
+function gloc_2022_sanitize_date( $input ) {
+	$date = new DateTime( $input );
+	return $date->format('d-m-Y');
+}
+
 function the_hero_style() {
 	$linear_gradient = 'linear-gradient(180deg, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0.0) 80%)'; 
   $url = get_theme_mod('hero-image');
   ?>
-  <style>
-    .hero {
-      <?php
-      if ($url != '') {
-      ?>
-        background-image: <?php echo $linear_gradient ?>, url("<?php echo $url ?>");
-      <?php
-      } else {
-      ?>
-        background-image: <?php echo $linear_gradient ?>;  
-      }
-      <?php
-      }
-      ?>
-    }
-  </style>
-	<?php
+<style>
+.hero {
+  <?php if ($url !='') {
+    ?>background-image: <?php echo $linear_gradient ?>, url("<?php echo $url ?>");
+    <?php
+  }
+
+  else {
+    ?>background-image: <?php echo $linear_gradient ?>;
+  }
+
+  <?php
+}
+
+?>
+}
+</style>
+<?php
+}
+
+function the_ticket_link() {
+	$link = get_theme_mod('upcoming-show-ticket-link');
+	if ($link != '') {
+		echo $link;
+	} else {
+		// Default link
+		echo 'https://www.ticketsource.co.uk/grosvenorlightopera';
+	}
+}
+
+function buy_tickets_text() {
+	$show_name = get_theme_mod('upcoming-show-name');
+	if ($show_name != '') {
+		echo 'Buy tickets to ' . $show_name . '!';
+	} else {
+		// Default link
+		echo 'Buy tickets!';
+	}
 }

@@ -54,18 +54,46 @@
             <button class="menu-toggle" aria-controls="primary-menu"
               aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'gloc-2022' ); ?></button>
             <?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
+              wp_nav_menu(
+                array(
+                  'theme_location' => 'menu-1',
+                  'menu_id'        => 'primary-menu',
+                )
+              );
+              ?>
           </nav><!-- #site-navigation -->
         </div>
       </div>
+      <?php
+      $upcoming_show_enabled = get_theme_mod('upcoming-show-enabled');
+      if ($upcoming_show_enabled) {
+      ?>
+      <div class="call-to-action">
+        <a class="tickets-call-to-action" href="<?php the_ticket_link() ?>">
+          <?php buy_tickets_text() ?>
+        </a>
+      </div>
+      <?php
+      }
+      ?>
     </div>
   </header>
 
+  <?php
+  if ($upcoming_show_enabled) {
+  ?>
+  <div class="show-banner">
+    <div class="label">
+      Come see our next show, <?php echo get_theme_mod('upcoming-show-name') ?>. 
+      From <?php echo get_theme_mod('upcoming-show-start-date') ?> to <?php echo get_theme_mod('upcoming-show-end-date') ?>
+    </div>
+    <a href="<?php the_ticket_link() ?>">
+      <img src="<?php echo get_theme_mod('upcoming-show-banner') ?>" class="banner-image"></img>
+    </a>
+  </div>
+
+  <?php
+  }
+  ?>
 
   <div id="page" class="site">
