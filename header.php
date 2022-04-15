@@ -49,7 +49,7 @@
           <h3 class="site-description"><?php bloginfo( 'description' );?></h3>
         </div>
 
-        <div class="header-row nav-row">
+        <!-- <div class="header-row nav-row">
           <nav id="site-navigation" class="main-navigation">
             <button class="menu-toggle" aria-controls="primary-menu"
               aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'gloc-2022' ); ?></button>
@@ -61,8 +61,8 @@
                 )
               );
               ?>
-          </nav><!-- #site-navigation -->
-        </div>
+          </nav>
+        </div> -->
       </div>
       <?php
       $upcoming_show_enabled = get_theme_mod('upcoming-show-enabled');

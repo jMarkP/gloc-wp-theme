@@ -70,9 +70,10 @@ html {
     }
 
     h1 {
-        font-family: "Josefin Sans", sans-serif;
+        font-family: "IntroCond-Black", sans-serif; //"Josefin Sans", sans-serif;
+        text-shadow: 1px 1px 0px $color__gloc_purple, 2px 2px 0px $color__gloc_orange;
         font-weight: 700;
-        font-size: 24px;
+        font-size: 38px;
 
         margin: 0;
         margin-right: 0.5em;
@@ -81,7 +82,13 @@ html {
 
     h3 {
         font-family: "Josefin Sans", sans-serif;
-        font-weight: 200;
+        font-weight: 700;
+        color: darken(white, 15%);
+        //@include text-gradient($color__gloc_orange, $color__gloc_purple);
+        // background-color: #f75818;
+        // background-image: linear-gradient(45deg, #f75818, #AE3CA2);
+        // padding: 1px 15px;
+        //text-shadow: 2px 2px 0px #333;
         font-style: normal;
         font-size: 18px;
 
@@ -108,7 +115,7 @@ html {
 
     .header-row {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
         justify-content: space-between;
     }
@@ -137,7 +144,7 @@ html {
         h1 {
             margin: 0;
             margin-right: 0.5em;
-            font-size: 26px;
+            font-size: 36px;
         }
 
         h3 {
@@ -147,7 +154,7 @@ html {
     }
 }
 
-@media (min-width: 1320px) {
+@media (min-width: 1550px) {
     .hero {
         padding: 2em;
 
@@ -160,7 +167,7 @@ html {
     }
     .site-branding {
         h1 {
-            font-size: 38px;
+            font-size: 52px;
         }
     }
 }
