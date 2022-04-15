@@ -69,13 +69,25 @@
   ?>
   <div class="show-banner">
     <a href="<?php the_ticket_link() ?>">
-    <div class="label">
-      Come see our next show, <strong><?php echo get_theme_mod('upcoming-show-name') ?></strong>.
-      From <?php echo get_theme_mod('upcoming-show-start-date') ?> to <?php echo get_theme_mod('upcoming-show-end-date') ?>.
-    </div>
-      <img src="<?php echo get_theme_mod('upcoming-show-banner') ?>" class="banner-image"></img>
+      <div class="ticket-and-image">
+
+        <img src="<?php echo get_theme_mod('upcoming-show-banner') ?>" class="banner-image"></img>
+    
+        <div class="ticket">
+          <div class="details">
+            <span class="show-name"><?php echo get_theme_mod('upcoming-show-name') ?></span>
+            <span class="show-dates"><?php echo get_theme_mod('upcoming-show-start-date') ?> to <?php echo get_theme_mod('upcoming-show-end-date') ?></span>
+            <span class="show-location">The Bridewell Theatre</span>
+          </div>
+          <div class="buy-now">
+            Buy tickets
+          </div>
+        </div>
+      </div>
     </a>
   </div>
+
+
 
   <?php
   }

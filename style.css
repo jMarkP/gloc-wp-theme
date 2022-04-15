@@ -1362,10 +1362,32 @@ ol, li {
 	border-top-right-radius: 9px;
 }
 
-.show-banner img {
+.show-banner .ticket-and-image {
+	display: flex;
+	flex-direction: row;
+}
+
+.show-banner .ticket-and-image img {
 	border-bottom-left-radius: 9px;
-	border-bottom-right-radius: 9px;
+	border-top-left-radius: 9px;
 	margin-bottom: -9px;
+	width: 67%;
+}
+
+.show-banner .ticket-and-image .ticket {
+	background-color: red;
+	border-top-right-radius: 9px;
+	border-bottom-right-radius: 9px;
+	background-image: linear-gradient(white 33%, rgba(255, 255, 255, 0) 0%);
+	background-position: left;
+	background-size: 2px 12px;
+	background-repeat: repeat-y;
+	width: 100%;
+}
+
+.show-banner .ticket-and-image .ticket .details {
+	display: flex;
+	flex-direction: column;
 }
 
 @media (min-width: 1216px) {

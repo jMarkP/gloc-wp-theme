@@ -50,10 +50,33 @@
     border-top-right-radius: 9px;
 
   }
-  img {
-    border-bottom-left-radius: 9px;
-    border-bottom-right-radius: 9px;
-    margin-bottom: -9px;
+
+  .ticket-and-image {
+    display: flex;
+    flex-direction: row;
+
+    img {
+      border-bottom-left-radius: 9px;
+      border-top-left-radius: 9px;
+      margin-bottom: -9px;
+      width: 67%;
+    }
+
+    .ticket {
+      background-color: red;
+      border-top-right-radius: 9px;
+      border-bottom-right-radius: 9px;
+      background-image: linear-gradient(white 33%, rgba(255,255,255,0) 0%);
+      background-position: left;
+      background-size: 2px 12px;
+      background-repeat: repeat-y;
+      width: 100%;
+
+      .details {
+        display: flex;
+        flex-direction: column;
+      }
+    }
   }
 }
 
