@@ -825,9 +825,10 @@ html {
 .hero {
 	color: #fff;
 	padding: 1em;
-	height: 100%;
+	height: 80%;
+	background-color: black;
 	background-position-x: center;
-	background-position-y: 20%;
+	background-position-y: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
 	position: relative;
@@ -907,15 +908,17 @@ html {
 .site-branding h3 {
 	font-family: "Josefin Sans", sans-serif;
 	font-weight: 700;
-	color: #d9d9d9;
+	color: #f2f2f2;
 	font-style: normal;
-	font-size: 18px;
+	font-size: 22px;
 	margin: 0;
 }
 
 @media (min-width: 800px) {
 	.hero {
-		height: 60%;
+		height: 50%;
+		background-position-y: 20%;
+		background-size: cover;
 	}
 	.header-bar {
 		flex-direction: row;
@@ -1315,13 +1318,18 @@ ol, li {
 }
 
 .tickets-call-to-action {
-	display: inline-block;
-	background: linear-gradient(to left, #f75818, #AE3CA2);
-	border: 2px solid white;
-	text-decoration: none;
-	font-weight: 700;
-	padding: 0.5em 1em;
-	text-align: center;
+	display: none;
+}
+
+@media (min-width: 800px) {
+	.tickets-call-to-action {
+		background: linear-gradient(to left, #f75818, #AE3CA2);
+		border: 2px solid white;
+		text-decoration: none;
+		font-weight: 700;
+		padding: 0.5em 1em;
+		text-align: center;
+	}
 }
 
 .show-banner {

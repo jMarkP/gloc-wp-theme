@@ -7,11 +7,12 @@ html {
     color: #fff;
     padding: 1em;
 
-    height: 100%;
+    height: 80%;
+    background-color: black;
     background-position-x: center;
-    background-position-y: 20%;
+    background-position-y: 100%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; //100% auto;
     position: relative;
 
     @include bottom-border-gradient($color__gloc_purple, $color__gloc_orange, 0.5em);
@@ -83,14 +84,9 @@ html {
     h3 {
         font-family: "Josefin Sans", sans-serif;
         font-weight: 700;
-        color: darken(white, 15%);
-        //@include text-gradient($color__gloc_orange, $color__gloc_purple);
-        // background-color: #f75818;
-        // background-image: linear-gradient(45deg, #f75818, #AE3CA2);
-        // padding: 1px 15px;
-        //text-shadow: 2px 2px 0px #333;
+        color: darken(white, 5%);
         font-style: normal;
-        font-size: 18px;
+        font-size: 22px;
 
         margin: 0;
     }
@@ -98,7 +94,9 @@ html {
 
 @media (min-width: $mobile-width-limit) {
     .hero {
-        height: 60%;
+        height: 50%;
+        background-position-y: 20%;
+        background-size: cover;
     }
     .header-bar {
         flex-direction: row;

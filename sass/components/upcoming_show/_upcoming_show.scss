@@ -6,13 +6,19 @@
 }
 
 .tickets-call-to-action {
-  display: inline-block;
-  background: $color__highlight-gradient;
-  border: 2px solid white;
-  text-decoration: none;
-  font-weight: 700;
-  padding: 0.5em 1em;
-  text-align: center;
+  display: none;
+}
+
+@media (min-width: $mobile-width-limit) {
+  .tickets-call-to-action {
+    //display: inline-block;
+    background: $color__highlight-gradient;
+    border: 2px solid white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 0.5em 1em;
+    text-align: center;
+  }
 }
 
 .show-banner {

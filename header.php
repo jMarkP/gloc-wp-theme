@@ -48,21 +48,6 @@
           <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
           <h3 class="site-description"><?php bloginfo( 'description' );?></h3>
         </div>
-
-        <!-- <div class="header-row nav-row">
-          <nav id="site-navigation" class="main-navigation">
-            <button class="menu-toggle" aria-controls="primary-menu"
-              aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'gloc-2022' ); ?></button>
-            <?php
-              wp_nav_menu(
-                array(
-                  'theme_location' => 'menu-1',
-                  'menu_id'        => 'primary-menu',
-                )
-              );
-              ?>
-          </nav>
-        </div> -->
       </div>
       <?php
       $upcoming_show_enabled = get_theme_mod('upcoming-show-enabled');
@@ -95,5 +80,21 @@
   <?php
   }
   ?>
+
+
+        <div class="header-row nav-row">
+          <nav id="site-navigation" class="main-navigation">
+            <button class="menu-toggle" aria-controls="primary-menu"
+              aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'gloc-2022' ); ?></button>
+              <?php
+              wp_nav_menu(
+                array(
+                  'theme_location' => 'menu-1',
+                  'menu_id'        => 'primary-menu',
+                )
+              );
+              ?>
+          </nav>
+        </div>
 
   <div id="page" class="site">
