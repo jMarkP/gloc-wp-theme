@@ -1332,8 +1332,15 @@ ol, li {
 	}
 }
 
+a.show-ticket-link {
+	text-decoration: none;
+}
+
+a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
+	color: white;
+}
+
 .show-banner {
-	max-width: 1200px;
 	margin-top: -100px;
 	margin-left: 1em;
 	margin-right: 1em;
@@ -1346,54 +1353,85 @@ ol, li {
 	border-radius: 9px;
 }
 
-.show-banner a {
-	text-decoration: none;
+.show-banner .banner-image {
+	border-top-left-radius: 9px;
+	border-top-right-radius: 9px;
+	margin-bottom: -9px;
 }
 
-.show-banner a:hover, .show-banner a:focus, .show-banner a:visited {
-	color: white;
-}
-
-.show-banner .label {
-	background: linear-gradient(to left, #f75818, #AE3CA2);
+.show-banner .ticket {
+	background: linear-gradient(to left, #F73218, #6B0684);
 	padding: 0.5em;
 	font-family: "IntroCond-Black", sans-serif;
-	border-top-left-radius: 9px;
-	border-top-right-radius: 9px;
-}
-
-.show-banner .ticket-and-image {
-	display: flex;
-	flex-direction: row;
-}
-
-.show-banner .ticket-and-image img {
 	border-bottom-left-radius: 9px;
-	border-top-left-radius: 9px;
-	margin-bottom: -9px;
-	width: 67%;
-}
-
-.show-banner .ticket-and-image .ticket {
-	background-color: red;
-	border-top-right-radius: 9px;
 	border-bottom-right-radius: 9px;
-	background-image: linear-gradient(white 33%, rgba(255, 255, 255, 0) 0%);
-	background-position: left;
-	background-size: 2px 12px;
-	background-repeat: repeat-y;
-	width: 100%;
 }
 
-.show-banner .ticket-and-image .ticket .details {
-	display: flex;
-	flex-direction: column;
+.show-banner .ticket .details {
+	font-family: 'Amatic SC', cursive;
+	font-family: 'Abel', sans-serif;
+	font-size: 12pt;
 }
 
-@media (min-width: 1216px) {
+.show-banner .ticket .details .show-name {
+	display: block;
+	font-size: 140%;
+	font-family: 'Staatliches', sans-serif;
+}
+
+.show-banner .ticket .buy-now {
+	font-family: 'Patua One', sans-serif;
+	font-size: 70%;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+@media (min-width: 1200px) {
 	.show-banner {
+		max-width: 1200px;
 		margin-left: auto;
 		margin-right: auto;
+		flex-direction: row;
+		height: 200px;
+	}
+	.show-banner .banner-image {
+		border-top-left-radius: 9px;
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 9px;
+		object-fit: cover;
+		width: 900px;
+		height: 200px;
+	}
+	.show-banner .ticket {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 300px;
+		border-top-left-radius: 0px;
+		border-top-right-radius: 9px;
+		border-bottom-right-radius: 9px;
+		border-bottom-left-radius: 0px;
+	}
+	.show-banner .ticket .details {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex-grow: 1;
+		font-size: 16pt;
+	}
+	.show-banner .ticket .details .show-name {
+		display: inline;
+		font-size: 140%;
+	}
+	.show-banner .ticket .details .show-dates {
+		font-size: 100%;
+	}
+	.show-banner .ticket .details .show-location {
+		font-size: 80%;
+	}
+	.show-banner .ticket .buy-now {
+		font-family: 'Patua One', sans-serif;
 	}
 }
 

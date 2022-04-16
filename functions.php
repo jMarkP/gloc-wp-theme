@@ -269,6 +269,20 @@ function add_upcoming_show_controls($wp_customize) {
 		),
 	));
 
+	// Show location
+	$wp_customize->add_setting('upcoming-show-location', array(
+		'type' => 'theme_mod',
+		'capability' => 'edit_theme_options',
+		'default' => 'The Bridewell Theatre, London, EC4Y 8EQ'
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'upcoming-show-location', array(
+		'label'    => 'Show location',
+		'description' => 'The location of the show, e.g. "The Bridewell Theatre, London, EC4Y 8EQ"', 
+		'section'  => 'upcoming-show',
+		'settings' => 'upcoming-show-location',
+		'type'     => 'input',
+	)));
+
 	// Banner
 	$wp_customize->add_setting('upcoming-show-banner', array(
 		'type' => 'theme_mod',
@@ -300,7 +314,7 @@ add_action('customize_register', 'add_upcoming_show_controls');
 
 function gloc_2022_sanitize_date( $input ) {
 	$date = new DateTime( $input );
-	return $date->format('d-m-Y');
+	return $date->format('jS F Y');
 }
 
 function the_hero_style() {

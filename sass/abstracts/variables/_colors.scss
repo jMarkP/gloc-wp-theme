@@ -4,6 +4,9 @@ $color__gloc_green_2: #9EC73B;
 $color__gloc_purple: #AE3CA2;
 $color__gloc_orange: #f75818;
 
+$color__gloc_burnt_orange: #F73218;
+$color__gloc_burnt_purple: #6B0684;
+
 $col-primary: #3cae48ff;
 $col-secondary: #9ec73bff;
 $col-highlight: $color__gloc_orange;
@@ -21,6 +24,7 @@ $color__background-gradient: linear-gradient(to left, $color__gloc_green_1, $col
 $color__background-gradient-light: linear-gradient(to left, $color__gloc_green_1_light, $color__gloc_green_2_light);
 $color__background-gradient-dark: linear-gradient(to left, $color__gloc_green_1_dark, $color__gloc_green_2_dark);
 $color__highlight-gradient: linear-gradient(to left, $color__gloc_orange, $color__gloc_purple);
+$color__burnt-gradient: linear-gradient(to left, $color__gloc_burnt_orange, $color__gloc_burnt_purple);
 
 $color__page-background-outer: rgba(8,52,56,1);
 $color__page-background-inner: rgba(15,22,38,1);

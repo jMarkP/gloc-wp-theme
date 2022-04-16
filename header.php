@@ -25,6 +25,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
 
+
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Kalam:wght@300;400;700&family=Patua+One&family=Square+Peg&family=Staatliches&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Arima+Madurai:wght@300&family=Courgette&family=Poiret+One&display=swap" rel="stylesheet">
+
   <?php wp_head(); ?>
 
   <?php echo the_hero_style(); ?>
@@ -67,25 +71,23 @@
   <?php
   if ($upcoming_show_enabled) {
   ?>
-  <div class="show-banner">
-    <a href="<?php the_ticket_link() ?>">
-      <div class="ticket-and-image">
+    <a class="show-ticket-link" href="<?php the_ticket_link() ?>">
+      <div class="show-banner ticket-and-image">
 
         <img src="<?php echo get_theme_mod('upcoming-show-banner') ?>" class="banner-image"></img>
     
         <div class="ticket">
           <div class="details">
             <span class="show-name"><?php echo get_theme_mod('upcoming-show-name') ?></span>
-            <span class="show-dates"><?php echo get_theme_mod('upcoming-show-start-date') ?> to <?php echo get_theme_mod('upcoming-show-end-date') ?></span>
-            <span class="show-location">The Bridewell Theatre</span>
+            <span class="show-dates"><?php echo get_theme_mod('upcoming-show-start-date') ?> &ndash; <?php echo get_theme_mod('upcoming-show-end-date') ?></span>
+            <span class="show-location"><?php echo get_theme_mod('upcoming-show-location') ?></span>
           </div>
           <div class="buy-now">
-            Buy tickets
+            Click here to buy tickets!
           </div>
         </div>
       </div>
     </a>
-  </div>
 
 
 

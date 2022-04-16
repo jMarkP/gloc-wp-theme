@@ -21,14 +21,17 @@
   }
 }
 
-.show-banner {
-  a {
-    text-decoration: none;
-    &:hover, &:focus, &:visited{
-      color: white;
-    }
+
+//////////////////
+
+a.show-ticket-link {
+  text-decoration: none;
+  &:hover, &:focus, &:visited{
+    color: white;
   }
-  max-width: 1200px;
+}
+
+.show-banner {
   margin-top: -100px;
   margin-left: 1em;
   margin-right: 1em;
@@ -41,48 +44,99 @@
   box-shadow: 0px 0px 5px 5px rgba(0,0,0, 0.3);
   border-radius: 9px;
 
-  .label {
-    background: $color__highlight-gradient;
+  .banner-image {
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    margin-bottom: -9px;
+  }
+  .ticket {
+    background: $color__burnt-gradient;
     padding: 0.5em;
     font-family: $font__heading;
 
-    border-top-left-radius: 9px;
-    border-top-right-radius: 9px;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
 
-  }
-
-  .ticket-and-image {
-    display: flex;
-    flex-direction: row;
-
-    img {
-      border-bottom-left-radius: 9px;
-      border-top-left-radius: 9px;
-      margin-bottom: -9px;
-      width: 67%;
-    }
-
-    .ticket {
-      background-color: red;
-      border-top-right-radius: 9px;
-      border-bottom-right-radius: 9px;
-      background-image: linear-gradient(white 33%, rgba(255,255,255,0) 0%);
-      background-position: left;
-      background-size: 2px 12px;
-      background-repeat: repeat-y;
-      width: 100%;
-
-      .details {
-        display: flex;
-        flex-direction: column;
+    .details {
+      font-family: 'Amatic SC', cursive;
+      // font-family: 'Kalam', cursive;
+      // font-family: 'Square Peg', cursive;
+      // font-family: 'Staatliches', sans-serif;
+      font-family: 'Abel', sans-serif;
+      // font-family: 'Arima Madurai', sans-serif;
+      // font-family: 'Courgette', sans-serif;
+      // font-family: 'Poiret One', sans-serif;
+      font-size: 12pt;
+      .show-name {
+        display: block;
+        font-size: 140%;
+        font-family: 'Staatliches', sans-serif;
       }
+    }
+    .buy-now {
+      font-family: 'Patua One', sans-serif;
+      font-size: 70%;
+      color: rgba(white, 0.8);
     }
   }
 }
 
-@media (min-width: 1216px) {
+///////////////////
+@media (min-width: 1200px) {
   .show-banner {
+    max-width: 1200px;
+
     margin-left: auto;
     margin-right: auto;
+
+    flex-direction: row;
+    height: 200px;
+
+    .banner-image {
+      border-top-left-radius: 9px;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 9px;
+      object-fit: cover;
+      width: 900px;
+      height: 200px;
+    }
+
+    .ticket {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 300px;
+
+      border-top-left-radius: 0px;
+      border-top-right-radius: 9px;
+      border-bottom-right-radius: 9px;
+      border-bottom-left-radius: 0px;
+
+      .details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        font-size: 16pt;
+
+        .show-name {
+          display: inline;
+          font-size: 140%;
+        }
+        .show-dates {
+          // border-top: 2px solid rgba(white, 0.7);
+          font-size: 100%;
+        }
+        .show-location {
+          font-size: 80%;
+        }
+
+      }
+      .buy-now {
+        font-family: 'Patua One', sans-serif;
+      }
+    }
   }
 }
