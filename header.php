@@ -96,7 +96,7 @@
   ?>
 
 
-        <div class="header-row nav-row">
+        <div class="nav-row">
           <nav id="site-navigation" class="main-navigation">
             <button class="menu-toggle" aria-controls="primary-menu"
               aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'gloc-2022' ); ?></button>

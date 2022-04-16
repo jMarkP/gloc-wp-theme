@@ -26,11 +26,11 @@ $color__background-gradient-dark: linear-gradient(to left, $color__gloc_green_1_
 $color__highlight-gradient: linear-gradient(to left, $color__gloc_orange, $color__gloc_purple);
 $color__burnt-gradient: linear-gradient(to left, $color__gloc_burnt_orange, $color__gloc_burnt_purple);
 
-$color__page-background-outer: rgba(8,52,56,1);
-$color__page-background-inner: rgba(15,22,38,1);
+$color__page-background-outer: rgb(8,52,56);
+$color__page-background-inner: rgb(15,22,38);
 
 @mixin page-background {
-  background: rgb(8,52,56);
+  background: $color__page-background-outer;
   background: -moz-linear-gradient(90deg, $color__page-background-outer 0%, $color__page-background-inner 33%, $color__page-background-inner 66%, $color__page-background-outer 100%);
   background: -webkit-linear-gradient(90deg, $color__page-background-outer 0%, $color__page-background-inner 33%, $color__page-background-inner 66%, $color__page-background-outer 100%);
   background: linear-gradient(90deg, $color__page-background-outer 0%, $color__page-background-inner 33%, $color__page-background-inner 66%, $color__page-background-outer 100%);
@@ -49,6 +49,16 @@ $color__page-background-inner: rgba(15,22,38,1);
 @mixin bottom-border-gradient($startColor, $endColor, $height: 0.5em) {
   &:after {
     background: linear-gradient(90deg, $startColor, $endColor);
+    content:"";
+    display: block;
+    height: $height;
+    width: 100%;
+    bottom: 0;
+  }
+}
+@mixin bottom-border-transparent($height: 0.5em) {
+  &:after {
+    background-color: transparent;
     content:"";
     display: block;
     height: $height;
