@@ -917,6 +917,10 @@ body.clear-header .hero .header-bar {
 	color: rgba(255, 255, 255, 0.6);
 }
 
+.minimal-branding img {
+	width: 100%;
+}
+
 .header-bar {
 	display: flex;
 	flex-direction: column;
@@ -1502,6 +1506,68 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
 	.show-banner .ticket .buy-now {
 		font-family: 'Patua One', sans-serif;
 	}
+}
+
+#sorcerer-page {
+	background-image: url("images/sorcerer-storm.jpg");
+	background-size: cover;
+	background-position-x: 50%;
+}
+
+#sorcerer-page .wp-block-media-text {
+	padding: 2em;
+	margin-bottom: 2em;
+	background-color: black;
+}
+
+#sorcerer-page .wp-block-media-text.nebula {
+	background-image: url("images/nebula.webp");
+	background-size: cover;
+	background-position-y: 50%;
+}
+
+#sorcerer-page .buy-now-bar {
+	width: 100%;
+	background-color: black;
+	background-image: url("images/nebula.webp");
+	background-size: cover;
+	background-position-y: 50%;
+	font-family: "IntroCond-Black", sans-serif;
+	font-size: 130%;
+}
+
+#sorcerer-page .buy-now-bar a {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0.5em;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+#sorcerer-page .buy-now-bar a:hover, #sorcerer-page .buy-now-bar a.focus {
+	color: white;
+}
+
+#sorcerer-page .buy-now-bar a span {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.site-main.sorcerer h1, .site-main.sorcerer h2, .site-main.sorcerer h3, .site-main.sorcerer h4 {
+	color: white;
+	background: none;
+	-webkit-background-clip: initial;
+	-moz-background-clip: initial;
+	-webkit-text-fill-color: initial;
+	-moz-text-fill-color: initial;
+	text-shadow: 1px 1px 0px black;
+	font-family: 'Nanum Myeongjo', serif;
 }
 
 /*--------------------------------------------------------------

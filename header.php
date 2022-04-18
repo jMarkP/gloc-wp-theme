@@ -29,6 +29,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Kalam:wght@300;400;700&family=Patua+One&family=Square+Peg&family=Staatliches&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Abel&family=Arima+Madurai:wght@300&family=Courgette&family=Poiret+One&display=swap" rel="stylesheet">
 
+  <script src="https://kit.fontawesome.com/f45f8c0350.js" crossorigin="anonymous"></script>
+
   <?php wp_head(); ?>
 
   <?php echo the_hero_style(); ?>

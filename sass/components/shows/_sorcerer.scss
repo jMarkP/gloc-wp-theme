@@ -1,0 +1,63 @@
+#sorcerer-page {
+	background-image: url('images/sorcerer-storm.jpg');
+	background-size: cover;
+  background-position-x: 50%;
+
+  .wp-block-media-text {
+    padding: 2em;
+    margin-bottom: 2em;
+    background-color: black;
+    &.nebula {
+      background-image: url('images/nebula.webp');
+      background-size: cover;
+      background-position-y: 50%;
+
+    }
+  }
+
+  .buy-now-bar {
+    width: 100%;
+    background-color: black;
+    background-image: url('images/nebula.webp');
+    background-size: cover;
+    background-position-y: 50%;
+    font-family: "IntroCond-Black", sans-serif;
+    font-size: 130%;
+    a {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0.5em;
+      text-decoration: none;
+      color: rgba(white, 0.9);
+      &:hover,
+      &.focus {
+        color: white;
+      }
+      span {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+.site-main.sorcerer {
+	h1,h2,h3,h4 {
+		color: white;
+		background: none;
+		-webkit-background-clip: initial;
+    -moz-background-clip: initial;
+    -webkit-text-fill-color: initial;
+    -moz-text-fill-color: initial;
+    text-shadow: 1px 1px 0px black;
+
+		font-family: 'Nanum Myeongjo', serif;
+	}
+}
+
