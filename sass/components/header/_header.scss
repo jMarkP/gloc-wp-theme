@@ -3,6 +3,17 @@ html {
     height: 100%;
 }
 
+body.clear-header {
+    background: black;
+    .hero {
+        margin-top: 8em;
+
+        .header-bar {
+            margin-top: -8em;   
+        }
+    }
+}
+
 .hero {
     color: #fff;
     padding: 1em;
@@ -23,7 +34,9 @@ html {
     }
 }
 
-.hero.minimal-branding {
+.minimal-branding {
+    background: black;
+    //height: 50%;
     .header-bar {
         align-items: baseline;
     }
@@ -34,7 +47,7 @@ html {
 			@include text-and-underline-gradient($color__gloc_purple, $color__gloc_orange, 0.2em);
         }
     }
-    h1 {
+    .site-branding h1 {
         text-shadow: none;
         font-size: 18pt !important;
         color: rgba(white, 0.8);

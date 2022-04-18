@@ -30,36 +30,38 @@
   <link href="https://fonts.googleapis.com/css2?family=Abel&family=Arima+Madurai:wght@300&family=Courgette&family=Poiret+One&display=swap" rel="stylesheet">
 
   <?php wp_head(); ?>
-  <?php echo the_hero_featured_image_style(); ?>
+  <!--<?php echo the_hero_featured_image_style(); ?>-->
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class('clear-header'); ?>>
   <?php wp_body_open(); ?>
 
   <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'gloc-2022'); ?></a>
 
-  <header class="hero minimal-branding">
-  <div class="header-bar">
-    <div class="header-rows">
-      <a href="<?php echo get_home_url() ?>">
-        <div class="site-branding header-row">
-          <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-        </div>     
-      </a> 
+  <header class="minimal-branding">
+    <div class="header-bar">
+      <div class="header-rows">
+        <a href="<?php echo get_home_url() ?>">
+          <div class="site-branding header-row">
+            <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+          </div>     
+        </a> 
+      </div>
+      <nav id="site-navigation" class="main-navigation">
+        <button class="menu-toggle" aria-controls="primary-menu"
+          aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'gloc-2022' ); ?></button>
+          <?php
+          wp_nav_menu(
+            array(
+              'theme_location' => 'menu-1',
+              'menu_id'        => 'primary-menu',
+            )
+          );
+          ?>
+      </nav>
     </div>
-    <nav id="site-navigation" class="main-navigation">
-      <button class="menu-toggle" aria-controls="primary-menu"
-        aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'gloc-2022' ); ?></button>
-        <?php
-        wp_nav_menu(
-          array(
-            'theme_location' => 'menu-1',
-            'menu_id'        => 'primary-menu',
-          )
-        );
-        ?>
-    </nav>
-  </div>
+
+    <?php echo get_the_post_thumbnail(null, 'full'); ?>
 
   </header>
 

@@ -827,6 +827,18 @@ html {
 	height: 100%;
 }
 
+body.clear-header {
+	background: black;
+}
+
+body.clear-header .hero {
+	margin-top: 8em;
+}
+
+body.clear-header .hero .header-bar {
+	margin-top: -8em;
+}
+
 .hero {
 	color: #fff;
 	padding: 1em;
@@ -853,16 +865,20 @@ html {
 	position: absolute;
 }
 
-.hero.minimal-branding .header-bar {
+.minimal-branding {
+	background: black;
+}
+
+.minimal-branding .header-bar {
 	align-items: baseline;
 }
 
-.hero.minimal-branding a {
+.minimal-branding a {
 	text-decoration: none;
 }
 
-.hero.minimal-branding a:hover h1,
-.hero.minimal-branding a.focus h1 {
+.minimal-branding a:hover h1,
+.minimal-branding a.focus h1 {
 	background-color: #AE3CA2;
 	background-image: linear-gradient(45deg, #AE3CA2, #f75818);
 	-webkit-background-clip: text;
@@ -871,8 +887,8 @@ html {
 	-moz-text-fill-color: transparent;
 }
 
-.hero.minimal-branding a:hover h1:after,
-.hero.minimal-branding a.focus h1:after {
+.minimal-branding a:hover h1:after,
+.minimal-branding a.focus h1:after {
 	background: linear-gradient(90deg, #AE3CA2, #f75818);
 	content: "";
 	display: block;
@@ -881,23 +897,23 @@ html {
 	bottom: 0;
 }
 
-.hero.minimal-branding h1 {
+.minimal-branding .site-branding h1 {
 	text-shadow: none;
 	font-size: 18pt !important;
 	color: rgba(255, 255, 255, 0.8);
 }
 
-.hero.minimal-branding .header-rows {
+.minimal-branding .header-rows {
 	margin-top: 0.1em;
 	padding-left: 0.5em;
 }
 
-.hero.minimal-branding .main-navigation {
+.minimal-branding .main-navigation {
 	margin-top: 0.1em;
 	font-size: 12pt;
 }
 
-.hero.minimal-branding .main-navigation li > a {
+.minimal-branding .main-navigation li > a {
 	color: rgba(255, 255, 255, 0.6);
 }
 
