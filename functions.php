@@ -346,7 +346,7 @@ function the_hero_featured_image_style() {
   $url = get_the_post_thumbnail_url(null, 'full');
   ?>
 <style>
-.hero {
+.sorcerer-hero {
   <?php if ($url !='') {
     ?>background-image: <?php echo $linear_gradient ?>, url("<?php echo $url ?>");
     <?php

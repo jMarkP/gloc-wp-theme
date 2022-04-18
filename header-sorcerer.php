@@ -33,7 +33,7 @@
   <script src="https://kit.fontawesome.com/f45f8c0350.js" crossorigin="anonymous"></script>
 
   <?php wp_head(); ?>
-  <!--<?php echo the_hero_featured_image_style(); ?>-->
+  <?php echo the_hero_featured_image_style(); ?>
 </head>
 
 <body <?php body_class('clear-header'); ?>>
@@ -41,7 +41,7 @@
 
   <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'gloc-2022'); ?></a>
 
-  <header class="minimal-branding">
+  <header class="sorcerer-hero">
     <div class="header-bar">
       <div class="header-rows">
         <a href="<?php echo get_home_url() ?>">
@@ -64,7 +64,7 @@
       </nav>
     </div>
 
-    <?php echo get_the_post_thumbnail(null, 'full'); ?>
+    <!-- <?php echo get_the_post_thumbnail(null, 'full'); ?> -->
 
   </header>
 

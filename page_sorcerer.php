@@ -5,7 +5,7 @@ get_header('sorcerer');
 
 	<div class="buy-now-bar">
 		<a href="<?php the_ticket_link() ?>">
-			<span><i class="fa-solid fa-ticket"></i> Buy tickets for The Sorcerer Now! Click here</span>
+			<span><i class="fa-solid fa-ticket"></i> Click here to buy tickets for The Sorcerer!</span>
 		</a>
 	</div>
 
@@ -27,13 +27,6 @@ get_header('sorcerer');
 
 	</main><!-- #main -->
 
-
-	<div class="buy-now-bar">
-		<a href="<?php the_ticket_link() ?>">
-			<span><i class="fa-solid fa-ticket"></i> Buy tickets for The Sorcerer Now! Click here</span>
-		</a>
-	</div>
-	
 <?php
 // get_sidebar();
 get_footer();
