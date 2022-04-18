@@ -341,6 +341,30 @@ function the_hero_style() {
 <?php
 }
 
+function the_hero_featured_image_style() {
+	$linear_gradient = 'linear-gradient(180deg, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.7) 5%, rgba(0, 0, 0, 0.0) 15%)'; 
+  $url = get_the_post_thumbnail_url(null, 'full');
+  ?>
+<style>
+.hero {
+  <?php if ($url !='') {
+    ?>background-image: <?php echo $linear_gradient ?>, url("<?php echo $url ?>");
+    <?php
+  }
+
+  else {
+    ?>background-image: <?php echo $linear_gradient ?>;
+  }
+
+  <?php
+}
+
+?>
+}
+</style>
+<?php
+}
+
 function the_ticket_link() {
 	$link = get_theme_mod('upcoming-show-ticket-link');
 	if ($link != '') {
