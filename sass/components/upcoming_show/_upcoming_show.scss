@@ -57,15 +57,12 @@ a.show-ticket-link {
     border-bottom-left-radius: 9px;
     border-bottom-right-radius: 9px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     .details {
-      font-family: 'Amatic SC', cursive;
-      // font-family: 'Kalam', cursive;
-      // font-family: 'Square Peg', cursive;
-      // font-family: 'Staatliches', sans-serif;
       font-family: 'Abel', sans-serif;
-      // font-family: 'Arima Madurai', sans-serif;
-      // font-family: 'Courgette', sans-serif;
-      // font-family: 'Poiret One', sans-serif;
       font-size: 12pt;
       .show-name {
         display: block;
@@ -74,9 +71,16 @@ a.show-ticket-link {
       }
     }
     .buy-now {
-      font-family: 'Patua One', sans-serif;
-      font-size: 70%;
-      color: rgba(white, 0.8);
+      span{
+        font-family: 'Patua One', sans-serif;
+        font-size: 90%;
+        color: $color__gloc_burnt_purple;
+      }
+      text-decoration: none;
+      background: rgba(white, 0.9);
+      border-radius: 3px;
+      padding: 0.4em;
+      margin-top: 0.4em;
     }
   }
 }

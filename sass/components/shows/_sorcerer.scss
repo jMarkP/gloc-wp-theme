@@ -112,8 +112,9 @@
 
   .buy-now-bar {
     width: 100%;
-    position: fixed;
-    bottom:0;
+    position: sticky;
+    position: -webkit-sticky;
+    top:0;
     left: 0;
     right: 0;
     background-color: black;
@@ -122,6 +123,7 @@
     background-position-y: 50%;
     font-family: "IntroCond-Black", sans-serif;
     font-size: 130%;
+    border-bottom: 3px solid white;
     a {
       width: 100%;
       display: flex;

@@ -1374,10 +1374,12 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
 	font-family: "IntroCond-Black", sans-serif;
 	border-bottom-left-radius: 9px;
 	border-bottom-right-radius: 9px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .show-banner .ticket .details {
-	font-family: 'Amatic SC', cursive;
 	font-family: 'Abel', sans-serif;
 	font-size: 12pt;
 }
@@ -1389,9 +1391,17 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
 }
 
 .show-banner .ticket .buy-now {
+	text-decoration: none;
+	background: rgba(255, 255, 255, 0.9);
+	border-radius: 3px;
+	padding: 0.4em;
+	margin-top: 0.4em;
+}
+
+.show-banner .ticket .buy-now span {
 	font-family: 'Patua One', sans-serif;
-	font-size: 70%;
-	color: rgba(255, 255, 255, 0.8);
+	font-size: 90%;
+	color: #6B0684;
 }
 
 @media (min-width: 1200px) {
@@ -1573,8 +1583,9 @@ body.clear-header .sorcerer-hero .header-bar {
 
 #sorcerer-page .buy-now-bar {
 	width: 100%;
-	position: fixed;
-	bottom: 0;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
 	left: 0;
 	right: 0;
 	background-color: black;
@@ -1583,6 +1594,7 @@ body.clear-header .sorcerer-hero .header-bar {
 	background-position-y: 50%;
 	font-family: "IntroCond-Black", sans-serif;
 	font-size: 130%;
+	border-bottom: 3px solid white;
 }
 
 #sorcerer-page .buy-now-bar a {

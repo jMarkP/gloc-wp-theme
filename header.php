@@ -28,7 +28,7 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Kalam:wght@300;400;700&family=Patua+One&family=Square+Peg&family=Staatliches&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Abel&family=Arima+Madurai:wght@300&family=Courgette&family=Poiret+One&display=swap" rel="stylesheet">
-
+  
   <script src="https://kit.fontawesome.com/f45f8c0350.js" crossorigin="anonymous"></script>
 
   <?php wp_head(); ?>
@@ -73,7 +73,7 @@
   <?php
   if ($upcoming_show_enabled) {
   ?>
-    <a class="show-ticket-link" href="<?php the_ticket_link() ?>">
+    <a class="show-ticket-link" href="<?php  echo get_permalink( get_theme_mod ( 'upcoming-show-internal-page' ) ); ?>">
       <div class="show-banner ticket-and-image">
 
         <img src="<?php echo get_theme_mod('upcoming-show-banner') ?>" class="banner-image"></img>
@@ -84,9 +84,11 @@
             <span class="show-dates"><?php echo get_theme_mod('upcoming-show-start-date') ?> &ndash; <?php echo get_theme_mod('upcoming-show-end-date') ?></span>
             <span class="show-location"><?php echo get_theme_mod('upcoming-show-location') ?></span>
           </div>
-          <div class="buy-now">
-            Click here to buy tickets!
-          </div>
+          <a class="buy-now" href="<?php the_ticket_link() ?>">
+            <span>
+              <i class="fa-solid fa-ticket"></i> Click here to buy tickets!
+            </span>
+          </a>
         </div>
       </div>
     </a>

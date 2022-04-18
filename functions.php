@@ -295,6 +295,19 @@ function add_upcoming_show_controls($wp_customize) {
 		'description' => 'Add a banner, size 1200x200px'
 	)));
 
+	// Link to show page
+	$wp_customize->add_setting('upcoming-show-internal-page', array(
+		'type' => 'theme_mod',
+		'capability' => 'edit_theme_options',
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'upcoming-show-internal-page', array(
+		'label'    => 'Page for the upcoming show',
+		'description' => 'Page on this website with details on the upcoming show', 
+		'section'  => 'upcoming-show',
+		'settings' => 'upcoming-show-internal-page',
+		'type'     => 'dropdown-pages',
+	)));
+
 	// Link to TicketSource
 	$wp_customize->add_setting('upcoming-show-ticket-link', array(
 		'type' => 'theme_mod',
