@@ -910,6 +910,10 @@ body.clear-header {
 	position: absolute;
 }
 
+.hero a.hero-home-link {
+	text-decoration: none;
+}
+
 .header-bar {
 	display: flex;
 	flex-direction: column;

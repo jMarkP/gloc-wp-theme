@@ -49,12 +49,14 @@
         the_custom_logo(); 
         ?>
       </div>
-      <div class="header-rows">
-        <div class="site-branding header-row">
-          <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-          <h3 class="site-description"><?php bloginfo( 'description' );?></h3>
+        <div class="header-rows">
+      <a class="hero-home-link" href="<?php echo home_url() ?>">
+          <div class="site-branding header-row">
+            <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+            <h3 class="site-description"><?php bloginfo( 'description' );?></h3>
+          </div>
+      </a>
         </div>
-      </div>
       <?php
       $upcoming_show_enabled = get_theme_mod('upcoming-show-enabled');
       if ($upcoming_show_enabled) {

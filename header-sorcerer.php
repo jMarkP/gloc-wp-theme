@@ -64,8 +64,6 @@
       </nav>
     </div>
 
-    <!-- <?php echo get_the_post_thumbnail(null, 'full'); ?> -->
-
   </header>
 
   <div id="sorcerer-page">
