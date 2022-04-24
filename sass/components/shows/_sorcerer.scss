@@ -44,6 +44,10 @@
     background-size: cover; //100% auto;
     position: relative;
     background-position-y: 50%;
+
+    .header-bar {
+      align-items: baseline;
+    }
   }
 
   body.clear-header {

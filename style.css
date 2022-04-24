@@ -740,6 +740,12 @@ textarea {
 
 .top-matter {
 	background-color: rgba(15, 22, 38, 0.8);
+	border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+	padding: 0.3em;
+}
+
+.top-matter .main-navigation {
+	margin-top: 0.5em;
 }
 
 .main-navigation {
@@ -752,14 +758,6 @@ textarea {
 	justify-content: space-between;
 	color: rgba(255, 255, 255, 0.8);
 	padding: 0;
-	margin-top: 0.5em;
-	width: 100%;
-	border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-	padding: 0.3em;
-}
-
-.main-navigation div {
-	width: 100%;
 }
 
 .main-navigation ul {
@@ -1052,6 +1050,7 @@ body.clear-header {
 @media (min-width: 1550px) {
 	.hero {
 		padding: 2em;
+		height: 50%;
 	}
 	.hero:after {
 		margin-left: -2em;
@@ -1617,6 +1616,9 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
 		background-size: cover;
 		position: relative;
 		background-position-y: 50%;
+	}
+	.sorcerer-hero .header-bar {
+		align-items: baseline;
 	}
 	body.clear-header .sorcerer-hero {
 		margin-top: 0;
