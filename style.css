@@ -1318,10 +1318,11 @@ ol, li {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .widget-horizontal section {
-	margin: 0.2em;
+	margin: 0.5em;
 }
 
 .widget-horizontal ul {
