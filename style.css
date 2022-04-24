@@ -895,11 +895,15 @@ body.clear-header {
 	background: black;
 }
 
+.home .hero {
+	height: 50%;
+}
+
 .hero {
 	color: #fff;
 	padding: 1em;
 	margin-top: 6em;
-	height: 50%;
+	height: 30%;
 	background-color: black;
 	background-position-x: center;
 	background-position-y: 100%;
@@ -998,8 +1002,7 @@ body.clear-header {
 
 @media (min-width: 800px) {
 	.hero {
-		height: 50%;
-		background-position-y: 20%;
+		background-position-y: 30%;
 		background-size: cover;
 	}
 	.header-bar {
@@ -1471,7 +1474,12 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
 
 .show-banner .ticket .details {
 	font-family: 'Abel', sans-serif;
-	font-size: 12pt;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-grow: 1;
+	font-size: 10pt;
 }
 
 .show-banner .ticket .details .show-name {
@@ -1484,13 +1492,13 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
 	text-decoration: none;
 	background: rgba(255, 255, 255, 0.9);
 	border-radius: 3px;
-	padding: 0.4em;
-	margin-top: 0.4em;
+	padding: 0.1em;
+	margin-top: 0.1em;
 }
 
 .show-banner .ticket .buy-now span {
 	font-family: 'Patua One', sans-serif;
-	font-size: 90%;
+	font-size: 70%;
 	color: #6B0684;
 }
 
@@ -1522,11 +1530,6 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
 		border-bottom-left-radius: 0px;
 	}
 	.show-banner .ticket .details {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		flex-grow: 1;
 		font-size: 16pt;
 	}
 	.show-banner .ticket .details .show-name {
@@ -1540,7 +1543,13 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
 		font-size: 80%;
 	}
 	.show-banner .ticket .buy-now {
+		border-radius: 3px;
+		padding: 0.4em;
+		margin-top: 0.4em;
+	}
+	.show-banner .ticket .buy-now span {
 		font-family: 'Patua One', sans-serif;
+		font-size: 90%;
 	}
 }
 

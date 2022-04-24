@@ -7,6 +7,12 @@ body.clear-header {
     background: black;
 }
 
+.home {
+    .hero {
+        height: 50%;
+    }
+}
+
 .hero {
     color: #fff;
     padding: 1em;
@@ -16,7 +22,7 @@ body.clear-header {
         margin-top: -6em;
     }
 
-    height: 50%;
+    height: 30%;
     background-color: black;
     background-position-x: center;
     background-position-y: 100%;
@@ -107,8 +113,7 @@ body.clear-header {
 
 @media (min-width: $mobile-width-limit) {
     .hero {
-        height: 50%;
-        background-position-y: 20%;
+        background-position-y: 30%;
         background-size: cover;
     }
     .header-bar {
