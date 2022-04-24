@@ -7,3 +7,18 @@
   padding: 0.5em;
   text-align: right;
 }
+
+a {
+  color: #ddd;
+  &:hover,
+	&:focus,
+	&:active {
+		color: white;
+		text-shadow: none;
+    background: none;
+    -webkit-background-clip: initial;
+    -moz-background-clip: initial;
+    -webkit-text-fill-color: initial; 
+    -moz-text-fill-color: initial;
+	}
+}

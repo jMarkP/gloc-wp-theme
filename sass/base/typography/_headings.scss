@@ -26,22 +26,15 @@ h6 {
 	h3 {
 		font-size: 32px;
 	}
-}
-
-@media screen and (min-width: $mobile-width-limit) {
-	.site-main h1 {
-		font-size: 50px;
-	}
-}
 
 ul.wp-block-latest-posts {
-	@include left-border-gradient($color__gloc_purple, $color__gloc_orange, 0.2em);
+	
 	margin: 0;
-	padding: 0 0 1.5em 3em;
-	padding-left: 1.5em !important;
-	position: relative;
 
 	li {
+		//@include left-border-gradient($color__gloc_purple, $color__gloc_orange, 0.2em);
+		padding-left: 1.5em;
+		margin-bottom: 1em;
 		a {
 			clear: both;
 			font-family: $font__heading;
@@ -66,3 +59,11 @@ ul.wp-block-latest-posts {
 		}
 	}	
 }
+}
+
+@media screen and (min-width: $mobile-width-limit) {
+	.site-main h1 {
+		font-size: 50px;
+	}
+}
+

@@ -57,8 +57,9 @@ $color__page-background-inner: rgb(15,22,38);
   }
 }
 @mixin left-border-gradient($startColor, $endColor, $width: 0.5em) {
+  position: relative;
   &:before {
-    background: linear-gradient(90deg, $startColor, $endColor);
+    background: linear-gradient(0deg, $startColor, $endColor);
     content:"";
     display: block;
     height: 100%;
