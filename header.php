@@ -72,8 +72,11 @@
     </div>
   </header>
 
+
+
   <div id="page" class="site">
 
+  <div class="top-matter">
   <?php
   if ($upcoming_show_enabled) {
   ?>
@@ -118,3 +121,5 @@
               ?>
           </nav>
         </div>
+
+  </div>

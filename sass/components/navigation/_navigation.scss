@@ -7,8 +7,12 @@
 	align-items: center;
 }
 
+.top-matter {
+	background-color: rgba($color__page-background-inner, 0.8);
+}
+
 .main-navigation {
-		font-family: "Josefin Sans", sans-serif;
+	font-family: "Josefin Sans", sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 
@@ -19,7 +23,14 @@
 
 	color: rgba(255, 255, 255, 0.8);
 	padding: 0;
-	margin-top: 2em;
+	margin-top: 0.5em;
+	width: 100%;
+	border-bottom: 2px solid rgba(white, 0.2);
+	padding: 0.3em;
+
+	div {
+		width: 100%;
+	}
 
 	ul {
 		display: flex;
