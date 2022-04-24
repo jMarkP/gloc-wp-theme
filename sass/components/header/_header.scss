@@ -11,7 +11,12 @@ body.clear-header {
     color: #fff;
     padding: 1em;
 
-    height: 80%;
+    margin-top: 6em;
+    .header-bar {
+        margin-top: -6em;
+    }
+
+    height: 50%;
     background-color: black;
     background-position-x: center;
     background-position-y: 100%;
@@ -47,7 +52,7 @@ body.clear-header {
 }
 
 .site-logo {
-    height: 100px;
+    height: 80px;
 
     a > img {
         width: 100%;
@@ -82,7 +87,7 @@ body.clear-header {
         font-family: "IntroCond-Black", sans-serif; //"Josefin Sans", sans-serif;
         text-shadow: 1px 1px 0px $color__gloc_purple, 2px 2px 0px $color__gloc_orange;
         font-weight: 700;
-        font-size: 38px;
+        font-size: 26px;
 
         margin: 0;
         margin-right: 0.5em;
@@ -94,7 +99,7 @@ body.clear-header {
         font-weight: 700;
         color: darken(white, 5%);
         font-style: normal;
-        font-size: 22px;
+        font-size: 16px;
 
         margin: 0;
     }
@@ -108,14 +113,14 @@ body.clear-header {
     }
     .header-bar {
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-between;
     }
 
 
     .header-rows {
         align-items: stretch;
-        margin-top: 1em;
+        margin-top: -1em;
         padding-left: 1em;
     }
 
@@ -133,8 +138,7 @@ body.clear-header {
     }
 
     .site-logo {
-        height: 150px;
-        min-width: 300px;
+        height: 100px;
     }
 
     .site-branding {
@@ -170,10 +174,14 @@ body.clear-header {
     }
     .header-rows {
         padding-left: 2em;
+        margin-top: 0;
     }
     .site-branding {
         h1 {
             font-size: 52px;
         }
+    }
+    .site-logo {
+        height: 150px;
     }
 }

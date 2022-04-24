@@ -36,7 +36,7 @@
   <?php echo the_hero_style(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class('clear-header'); ?>>
   <?php wp_body_open(); ?>
 
   <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'gloc-2022'); ?></a>
@@ -71,6 +71,8 @@
       ?>
     </div>
   </header>
+
+  <div id="page" class="site">
 
   <?php
   if ($upcoming_show_enabled) {
@@ -116,5 +118,3 @@
               ?>
           </nav>
         </div>
-
-  <div id="page" class="site">

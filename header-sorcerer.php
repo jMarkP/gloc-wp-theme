@@ -41,7 +41,7 @@
 
   <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'gloc-2022'); ?></a>
 
-  <header class="sorcerer-hero">
+  <header class="sorcerer-hero hero">
     <div class="header-bar">
       <div class="header-rows">
         <a href="<?php echo get_home_url() ?>">
