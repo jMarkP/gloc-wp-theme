@@ -1321,7 +1321,12 @@ ol, li {
 }
 
 .widget-horizontal section {
-	margin: 1em;
+	margin: 0.2em;
+}
+
+.widget-horizontal ul {
+	margin: 0;
+	padding-inline-start: 0.5em;
 }
 
 /* Media

@@ -15,16 +15,11 @@
 
 		<?php get_sidebar( 'footer' ); ?>
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'gloc-2022' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'gloc-2022' ), 'WordPress' );
-				?>
-			</a>
+			Grosvenor Light Opera Company, Registered charity No. 1065719
 			<span class="sep"> | </span>
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'gloc-2022' ), 'gloc-2022', 'J. Mark Pim' );
+				printf( esc_html__( 'Theme: by %1$s.', 'gloc-2022' ), 'J. Mark Pim' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
