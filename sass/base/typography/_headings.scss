@@ -7,21 +7,19 @@ h6 {
 	clear: both;
 	font-family: $font__heading;
 	font-weight: 700;
-	display: inline-block;
+	//display: inline-block;
 }
 
-
-.site-main{ 
-	h1 {
-		@include text-gradient($color__gloc_green_1, $color__gloc_green_2);
-		font-size: 42px;
-	}
-
+.site-main {
+	h1,
 	h2,
 	h3 {
 		text-shadow: 1px 1px 0px $color__gloc_purple, 2px 2px 0px $color__gloc_orange;
 	}
 
+	h1 {
+		font-size: 42px;
+	}
 	h2 {
 		font-size: 36px;
 	}
@@ -30,14 +28,41 @@ h6 {
 	}
 }
 
-
 @media screen and (min-width: $mobile-width-limit) {
 	.site-main h1 {
 		font-size: 50px;
-	}	
+	}
 }
 
-// h3 {
-// 	font-weight: 200;
-// 	font-style: italic;
-// }
+ul.wp-block-latest-posts {
+	@include left-border-gradient($color__gloc_purple, $color__gloc_orange, 0.2em);
+	margin: 0;
+	padding: 0 0 1.5em 3em;
+	padding-left: 1.5em !important;
+	position: relative;
+
+	li {
+		a {
+			clear: both;
+			font-family: $font__heading;
+			font-weight: 700;
+			display: inline-block;
+			text-shadow: 1px 1px 0px $color__gloc_purple, 2px 2px 0px $color__gloc_orange;
+			font-size: 32px;
+			text-decoration: none;
+
+			padding-bottom: 0.5em;
+			@include bottom-border-transparent(0.2em);
+
+			&:hover,
+			&.focus {
+				color: white;
+				@include bottom-border-gradient($color__gloc_purple, $color__gloc_orange, 0.2em);
+			}
+		}
+		div.wp-block-latest-posts__featured-image {
+			float: right;
+			margin-left: 1em;
+		}
+	}	
+}

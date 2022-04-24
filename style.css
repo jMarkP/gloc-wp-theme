@@ -383,7 +383,7 @@ input,
 select,
 optgroup,
 textarea {
-	color: #404040;
+	color: #eee;
 	font-family: "Open Sans Condensed", sans-serif;
 	font-size: 1.3rem;
 	line-height: 1.5;
@@ -398,22 +398,16 @@ h6 {
 	clear: both;
 	font-family: "IntroCond-Black", sans-serif;
 	font-weight: 700;
-	display: inline-block;
 }
 
-.site-main h1 {
-	background-color: #3CAE48;
-	background-image: linear-gradient(45deg, #3CAE48, #9EC73B);
-	-webkit-background-clip: text;
-	-moz-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-moz-text-fill-color: transparent;
-	font-size: 42px;
-}
-
+.site-main h1,
 .site-main h2,
 .site-main h3 {
 	text-shadow: 1px 1px 0px #AE3CA2, 2px 2px 0px #f75818;
+}
+
+.site-main h1 {
+	font-size: 42px;
 }
 
 .site-main h2 {
@@ -428,6 +422,61 @@ h6 {
 	.site-main h1 {
 		font-size: 50px;
 	}
+}
+
+ul.wp-block-latest-posts {
+	margin: 0;
+	padding: 0 0 1.5em 3em;
+	padding-left: 1.5em !important;
+	position: relative;
+}
+
+ul.wp-block-latest-posts:before {
+	background: linear-gradient(90deg, #AE3CA2, #f75818);
+	content: "";
+	display: block;
+	height: 100%;
+	width: 0.2em;
+	left: 0;
+	position: absolute;
+}
+
+ul.wp-block-latest-posts li a {
+	clear: both;
+	font-family: "IntroCond-Black", sans-serif;
+	font-weight: 700;
+	display: inline-block;
+	text-shadow: 1px 1px 0px #AE3CA2, 2px 2px 0px #f75818;
+	font-size: 32px;
+	text-decoration: none;
+	padding-bottom: 0.5em;
+}
+
+ul.wp-block-latest-posts li a:after {
+	background-color: transparent;
+	content: "";
+	display: block;
+	height: 0.2em;
+	width: 100%;
+	bottom: 0;
+}
+
+ul.wp-block-latest-posts li a:hover, ul.wp-block-latest-posts li a.focus {
+	color: white;
+}
+
+ul.wp-block-latest-posts li a:hover:after, ul.wp-block-latest-posts li a.focus:after {
+	background: linear-gradient(90deg, #AE3CA2, #f75818);
+	content: "";
+	display: block;
+	height: 0.2em;
+	width: 100%;
+	bottom: 0;
+}
+
+ul.wp-block-latest-posts li div.wp-block-latest-posts__featured-image {
+	float: right;
+	margin-left: 1em;
 }
 
 p {
@@ -559,11 +608,18 @@ a:visited {
 }
 
 a:hover, a:focus, a:active {
-	color: #191970;
+	color: white;
+	text-shadow: none;
+	background-color: #AE3CA2;
+	background-image: linear-gradient(45deg, #AE3CA2, #f75818);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
 }
 
 a:focus {
-	outline: thin dotted;
+	outline: none;
 }
 
 a:hover, a:active {

@@ -56,6 +56,17 @@ $color__page-background-inner: rgb(15,22,38);
     bottom: 0;
   }
 }
+@mixin left-border-gradient($startColor, $endColor, $width: 0.5em) {
+  &:before {
+    background: linear-gradient(90deg, $startColor, $endColor);
+    content:"";
+    display: block;
+    height: 100%;
+    width: $width;
+    left: 0;
+    position: absolute;
+  }  
+}
 @mixin bottom-border-transparent($height: 0.5em) {
   &:after {
     background-color: transparent;
@@ -84,8 +95,7 @@ $color__text-input: #666;
 $color__text-input-focus: #111;
 $color__link: white; 
 $color__link-visited: white; //purple
-$color__link-hover: #191970; //midnightblue
-$color__text-main: #404040;
+$color__text-main: #eee;
 
 $color__border-button: #ccc #ccc #bbb;
 $color__border-button-hover: #ccc #bbb #aaa;
