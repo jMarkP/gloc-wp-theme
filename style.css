@@ -1647,6 +1647,14 @@ body.clear-header .sorcerer-hero .header-bar {
 	display: block;
 }
 
+.sp-button {
+	border-color: white;
+}
+
+.sp-button.sp-selected-button {
+	background-color: white;
+}
+
 /*--------------------------------------------------------------
 # Utilities
 --------------------------------------------------------------*/
