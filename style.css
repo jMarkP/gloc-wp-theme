@@ -427,7 +427,7 @@ h6 {
 	margin-bottom: 1em;
 }
 
-.site-main ul.wp-block-latest-posts li a {
+.site-main ul.wp-block-latest-posts li > a {
 	clear: both;
 	font-family: "IntroCond-Black", sans-serif;
 	font-weight: 700;
@@ -438,7 +438,7 @@ h6 {
 	padding-bottom: 0.5em;
 }
 
-.site-main ul.wp-block-latest-posts li a:after {
+.site-main ul.wp-block-latest-posts li > a:after {
 	background-color: transparent;
 	content: "";
 	display: block;
@@ -447,11 +447,11 @@ h6 {
 	bottom: 0;
 }
 
-.site-main ul.wp-block-latest-posts li a:hover, .site-main ul.wp-block-latest-posts li a.focus {
+.site-main ul.wp-block-latest-posts li > a:hover, .site-main ul.wp-block-latest-posts li > a.focus {
 	color: white;
 }
 
-.site-main ul.wp-block-latest-posts li a:hover:after, .site-main ul.wp-block-latest-posts li a.focus:after {
+.site-main ul.wp-block-latest-posts li > a:hover:after, .site-main ul.wp-block-latest-posts li > a.focus:after {
 	background: linear-gradient(90deg, #AE3CA2, #f75818);
 	content: "";
 	display: block;
