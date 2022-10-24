@@ -88,7 +88,7 @@
         <div class="ticket">
           <div class="details">
             <span class="show-name"><?php echo get_theme_mod('upcoming-show-name') ?></span>
-            <!-- <span class="show-dates"><?php echo get_theme_mod('upcoming-show-start-date') ?></span> &ndash; <?php echo get_theme_mod('upcoming-show-end-date') ?></span> -->
+            <span class="show-dates"><?php echo get_theme_mod('upcoming-show-start-date') ?></span> <!-- &ndash; <?php echo get_theme_mod('upcoming-show-end-date') ?></span> -->
             <span class="show-location"><?php echo get_theme_mod('upcoming-show-location') ?></span>
           </div>
           <a class="buy-now" href="<?php the_ticket_link() ?>">
