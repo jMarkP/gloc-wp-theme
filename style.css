@@ -1714,6 +1714,182 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
 	font-family: 'Nanum Myeongjo', serif;
 }
 
+.grandnight-hero {
+	height: 40%;
+	min-height: 350px;
+	margin-top: 4em;
+}
+
+.grandnight-hero .header-bar {
+	margin-top: -4em;
+}
+
+.grandnight-hero a {
+	text-decoration: none;
+}
+
+.grandnight-hero a:hover h1,
+.grandnight-hero a.focus h1 {
+	background-color: #AE3CA2;
+	background-image: linear-gradient(45deg, #AE3CA2, #f75818);
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+}
+
+.grandnight-hero a:hover h1:after,
+.grandnight-hero a.focus h1:after {
+	background: linear-gradient(90deg, #AE3CA2, #f75818);
+	content: "";
+	display: block;
+	height: 0.2em;
+	width: 100%;
+	bottom: 0;
+}
+
+.grandnight-hero .site-branding h1 {
+	text-shadow: none;
+	font-size: 18pt !important;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.grandnight-hero .header-rows {
+	margin-top: 0.1em;
+	padding-left: 0.5em;
+}
+
+.grandnight-hero .main-navigation {
+	margin-top: 0.1em;
+	font-size: 12pt;
+}
+
+.grandnight-hero .main-navigation li > a {
+	color: rgba(255, 255, 255, 0.6);
+}
+
+.grandnight-hero img {
+	width: 100%;
+}
+
+.grandnight-hero:after {
+	background: none;
+}
+
+@media (min-width: 800px) {
+	.grandnight-hero {
+		background: black;
+		background-position-x: center;
+		background-position-y: 20%;
+		height: 50%;
+		min-height: 480px;
+		color: #fff;
+		padding: 1em;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+	}
+	.grandnight-hero .header-bar {
+		align-items: baseline;
+	}
+	body.clear-header .grandnight-hero {
+		margin-top: 0;
+	}
+	body.clear-header .grandnight-hero .header-bar {
+		margin-top: 0;
+	}
+}
+
+@media (min-width: 1000px) {
+	.grandnight-hero {
+		height: 70%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.grandnight-hero {
+		height: 80%;
+	}
+}
+
+#grandnight-page {
+	background-color: #e6d9c6;
+}
+
+#grandnight-page .wp-block-media-text {
+	padding: 2em;
+	margin-bottom: 2em;
+	background-color: black;
+}
+
+#grandnight-page .wp-block-media-text.nebula {
+	background-image: url("images/nebula.webp");
+	background-size: cover;
+	background-position-y: 50%;
+}
+
+#grandnight-page .buy-now-bar {
+	width: 100%;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #476821;
+	font-family: "IntroCond-Black", sans-serif;
+	font-size: 130%;
+	border-bottom: 3px solid white;
+}
+
+#grandnight-page .buy-now-bar a {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0.5em;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+#grandnight-page .buy-now-bar a:hover, #grandnight-page .buy-now-bar a.focus {
+	color: white;
+}
+
+#grandnight-page .buy-now-bar a span {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.site-main.grandnight h1, .site-main.grandnight h2, .site-main.grandnight h3, .site-main.grandnight h4 {
+	color: #476821;
+	background: none;
+	-webkit-background-clip: initial;
+	-moz-background-clip: initial;
+	-webkit-text-fill-color: initial;
+	-moz-text-fill-color: initial;
+	font-family: 'Lobster Two', cursive;
+	font-family: 'Calistoga', cursive;
+	text-shadow: none;
+}
+
+.site-main.grandnight h1 {
+	font-size: 56px;
+}
+
+.site-main.grandnight h2 {
+	font-size: 42px;
+}
+
+.site-main.grandnight .entry-content {
+	font-family: 'Crimson Text', serif;
+	color: black;
+	text-shadow: 0px 2px 0px white;
+}
+
 /*--------------------------------------------------------------
 # Plugins
 --------------------------------------------------------------*/
