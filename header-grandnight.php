@@ -24,8 +24,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  
 
+  <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet"> 
+  
+  
+  
+  
   <link href="https://fonts.googleapis.com/css2?family=Abel&family=Arima+Madurai:wght@300&family=Courgette&family=Poiret+One&display=swap" rel="stylesheet">
 
   <script src="https://kit.fontawesome.com/f45f8c0350.js" crossorigin="anonymous"></script>
@@ -39,7 +45,7 @@
 
   <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'gloc-2022'); ?></a>
 
-  <header class="sorcerer-hero hero">
+  <header class="grandnight-hero hero">
     <div class="header-bar">
       <div class="header-rows">
         <a href="<?php echo get_home_url() ?>">
@@ -64,4 +70,4 @@
 
   </header>
 
-  <div id="sorcerer-page">
+  <div id="grandnight-page">

@@ -374,6 +374,22 @@ function the_hero_featured_image_style() {
 
 ?>
 }
+
+.grandnight-hero {
+  <?php if ($url !='') {
+    ?>background-image: <?php echo $linear_gradient ?>, url("<?php echo $url ?>");
+    <?php
+  }
+
+  else {
+    ?>background-image: <?php echo $linear_gradient ?>;
+  }
+
+  <?php
+}
+
+?>
+}
 </style>
 <?php
 }
