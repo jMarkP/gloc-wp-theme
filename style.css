@@ -1000,7 +1000,7 @@ body.clear-header {
 
 @media (min-width: 800px) {
 	.hero {
-		background-position-y: 30%;
+		background-position-y: 50%;
 		background-size: cover;
 	}
 	.header-bar {
@@ -1050,7 +1050,7 @@ body.clear-header {
 @media (min-width: 1550px) {
 	.hero {
 		padding: 2em;
-		height: 50%;
+		height: 55%;
 	}
 	.hero:after {
 		margin-left: -2em;
