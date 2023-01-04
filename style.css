@@ -1424,12 +1424,13 @@ ol, li {
 	height: 150px;
 }
 
-.tickets-call-to-action {
+.call-to-action-button {
 	display: none;
 }
 
 @media (min-width: 800px) {
-	.tickets-call-to-action {
+	.call-to-action-button {
+		display: inline-block;
 		background: linear-gradient(to left, #f75818, #AE3CA2);
 		border: 2px solid white;
 		text-decoration: none;

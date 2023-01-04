@@ -201,6 +201,19 @@ function add_hero_controls($wp_customize) {
 		'section' => 'hero',
 		'label' => 'Hero image'
 	)));
+
+	// Link to Join us
+	$wp_customize->add_setting('join-us-link', array(
+		'type' => 'theme_mod',
+		'capability' => 'edit_theme_options',
+	));
+	$wp_customize->add_control(new WP_Customize_Control($wp_customize, 'join-us-link', array(
+		'label'    => 'Link to join us page',
+		'description' => 'Page that we link to people to join us', 
+		'section'  => 'hero',
+		'settings' => 'join-us-link',
+		'type'     => 'dropdown-pages',
+	)));
 }
 add_action('customize_register', 'add_hero_controls');
 
@@ -401,6 +414,16 @@ function the_ticket_link() {
 	} else {
 		// Default link
 		echo 'https://www.ticketsource.co.uk/grosvenorlightopera';
+	}
+}
+
+function the_join_us_link() {
+	$link = get_theme_mod('join-us-link');
+	if ($link != '') {
+		echo $link;
+	} else {
+		// Default link
+		echo 'https://gloc.org/join-gloc/';
 	}
 }
 

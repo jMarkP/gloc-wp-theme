@@ -43,32 +43,24 @@
 
   <header class="hero">
     <div class="header-bar">
-
       <div class="site-logo">
         <?php 
         the_custom_logo(); 
         ?>
       </div>
-        <div class="header-rows">
-      <a class="hero-home-link" href="<?php echo home_url() ?>">
+      <div class="header-rows">
+        <a class="hero-home-link" href="<?php echo home_url() ?>">
           <div class="site-branding header-row">
             <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
             <h3 class="site-description"><?php bloginfo( 'description' );?></h3>
           </div>
-      </a>
-        </div>
-      <?php
-      $upcoming_show_enabled = get_theme_mod('upcoming-show-enabled');
-      if ($upcoming_show_enabled) {
-      ?>
-      <div class="call-to-action">
-        <a class="tickets-call-to-action" href="<?php the_ticket_link() ?>">
-          <?php buy_tickets_text() ?>
         </a>
       </div>
-      <?php
-      }
-      ?>
+      <div class="call-to-action">
+        <a class="call-to-action-button" href="<?php the_join_us_link() ?>">
+          Join us!
+        </a>
+      </div>
     </div>
   </header>
 
@@ -78,6 +70,7 @@
 
   <div class="top-matter">
   <?php
+  $upcoming_show_enabled = get_theme_mod('upcoming-show-enabled');
   if ($upcoming_show_enabled) {
   ?>
     <a class="show-ticket-link" href="<?php  echo get_permalink( get_theme_mod ( 'upcoming-show-internal-page' ) ); ?>">

@@ -5,13 +5,13 @@
   height: 150px;
 }
 
-.tickets-call-to-action {
+.call-to-action-button {
   display: none;
 }
 
 @media (min-width: $mobile-width-limit) {
-  .tickets-call-to-action {
-    //display: inline-block;
+  .call-to-action-button {
+    display: inline-block;
     background: $color__highlight-gradient;
     border: 2px solid white;
     text-decoration: none;
