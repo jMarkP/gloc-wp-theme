@@ -420,7 +420,7 @@ function the_ticket_link() {
 function the_join_us_link() {
 	$link = get_theme_mod('join-us-link');
 	if ($link != '') {
-		echo $link;
+		echo get_permalink ( $link );
 	} else {
 		// Default link
 		echo 'https://gloc.org/join-gloc/';
