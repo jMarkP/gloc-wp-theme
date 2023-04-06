@@ -1,0 +1,104 @@
+$color__grandduke_dark_blue: #4A4D9C;
+$color__grandduke_light_blue: #6267AD;
+$color__sign_background: #FEF5EB;
+$color__grandduke_red: #941751;
+
+#grandduke {
+
+  .hero {
+    height: 30%;
+
+    &:after {
+      background: white !important;
+      height: 3px;
+    }
+  }
+
+  @media (min-width: 500px) {
+    .hero {
+      height: 30%;
+    }
+  }
+
+  @media (min-width: 700px) {
+    .hero {
+      height: 40%;
+    }
+  }
+
+  @media (min-width: 900px) {
+    .hero {
+      height: 50%;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .hero {
+      height: 60%;
+    }
+  }
+
+  @media (min-width: 1500px) {
+    .hero {
+      height: 70%;
+    }
+  }
+
+  @media (min-width: 1800px) {
+    .hero {
+      height: 80%;
+    }
+  }
+
+  .buy-now-bar {
+    background-color: $color__grandduke_red;
+
+    font-family: 'DoubledeckerRegular', sans-serif;
+  }
+
+  #page {
+    background-color: $color__grandduke_light_blue;
+
+    .sign {
+      transform: rotate(-1.5deg);
+      background-color: $color__sign_background;
+      border: 6px solid black;
+      border-radius: 15px;
+      padding: 2em;
+      color: black;
+      text-shadow: none;
+      box-shadow: 4px 4px 13px 1px rgba(0, 0, 0, 0.5);
+      h1,h2,h3,h4 {
+        font-family: 'DoubledeckerRegular', sans-serif;
+        font-weight: 500;
+        color: black;
+        text-shadow: none;
+      }
+      margin-bottom: 2em;
+    }
+
+    .red {
+      transform: rotate(1.5deg);
+      background-color: $color__grandduke_red;
+      border: 6px solid black;
+      box-shadow: 4px 4px 13px 1px rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      padding: 2em;
+      h1,h2,h3,h4 {
+        text-shadow: none;
+      }
+      margin-bottom: 2em;
+    }
+  }
+
+  .site-main {
+    h1,h2,h3,h4 {
+      font-family: 'DoubledeckerRegular', sans-serif;
+      font-weight: 500;
+      text-shadow: 4px 4px 2px $color__grandduke_dark_blue;
+    }
+
+    font-family: 'Fira Sans Condensed', sans-serif;
+  }
+
+}

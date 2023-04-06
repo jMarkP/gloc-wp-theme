@@ -367,12 +367,12 @@ function the_hero_style() {
 <?php
 }
 
-function the_hero_featured_image_style() {
-	$linear_gradient = 'linear-gradient(180deg, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.7) 5%, rgba(0, 0, 0, 0.0) 15%)'; 
+function the_show_hero_image_style() {
+	$linear_gradient = 'linear-gradient(180deg, rgba(0, 0, 0, 1.0) 0%, rgba(0, 0, 0, 0.7) 3%, rgba(0, 0, 0, 0.0) 8%)'; 
   $url = get_the_post_thumbnail_url(null, 'full');
   ?>
 <style>
-.sorcerer-hero {
+.hero {
   <?php if ($url !='') {
     ?>background-image: <?php echo $linear_gradient ?>, url("<?php echo $url ?>");
     <?php

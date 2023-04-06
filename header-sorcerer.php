@@ -31,7 +31,7 @@
   <script src="https://kit.fontawesome.com/f45f8c0350.js" crossorigin="anonymous"></script>
 
   <?php wp_head(); ?>
-  <?php echo the_hero_featured_image_style(); ?>
+  <?php echo the_show_hero_image_style(); ?>
 </head>
 
 <body <?php body_class('clear-header'); ?>>

@@ -24,15 +24,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet"> 
-  
-  
-  
-  
   <link href="https://fonts.googleapis.com/css2?family=Abel&family=Arima+Madurai:wght@300&family=Courgette&family=Poiret+One&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
 
   <script src="https://kit.fontawesome.com/f45f8c0350.js" crossorigin="anonymous"></script>
 
@@ -40,17 +36,18 @@
   <?php echo the_show_hero_image_style(); ?>
 </head>
 
-<body <?php body_class('clear-header'); ?>>
+<body <?php body_class('clear-header show-page'); ?> id="<?php echo get_post_field( 'post_name', get_post() ); ?>">
   <?php wp_body_open(); ?>
 
   <a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'gloc-2022'); ?></a>
 
-  <header class="grandnight-hero hero">
-    <div class="header-bar">
+  <header class="hero">
+  <div class="header-bar">
       <div class="header-rows">
         <a href="<?php echo get_home_url() ?>">
           <div class="site-branding header-row">
             <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+            <h3>Present</h3>
           </div>     
         </a> 
       </div>
@@ -66,8 +63,8 @@
           );
           ?>
       </nav>
-    </div>
+    </div>    
 
   </header>
 
-  <div id="grandnight-page">
+  <div id="page">
