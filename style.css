@@ -1992,6 +1992,9 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
   font-weight: 500;
   text-shadow: 4px 4px 2px #4A4D9C;
 }
+#grandduke .site-main .entry-content {
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
+}
 
 /*--------------------------------------------------------------
 # Plugins

@@ -102,6 +102,10 @@ $color__grandduke_red: #941751;
     }
 
     font-family: 'Fira Sans Condensed', sans-serif;
+
+    .entry-content {
+      text-shadow: 1px 1px 0px rgba(0,0,0,0.6);
+    }
   }
 
 }
