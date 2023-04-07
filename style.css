@@ -1995,6 +1995,9 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
 #grandduke .site-main .entry-content {
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
 }
+#grandduke .site-main .wp-block-pullquote {
+  padding: 0;
+}
 
 /*--------------------------------------------------------------
 # Plugins
