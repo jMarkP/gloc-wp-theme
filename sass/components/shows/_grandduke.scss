@@ -7,6 +7,7 @@ $color__grandduke_red: #941751;
 
   .hero {
     height: 30%;
+    background-color: #941751;
 
     &:after {
       background: white !important;
@@ -38,15 +39,17 @@ $color__grandduke_red: #941751;
     }
   }
 
-  @media (min-width: 1500px) {
+  @media (min-width: 1450px) {
     .hero {
       height: 70%;
+      background-size: contain;
     }
   }
 
   @media (min-width: 1800px) {
     .hero {
       height: 80%;
+      background-size: contain;
     }
   }
 

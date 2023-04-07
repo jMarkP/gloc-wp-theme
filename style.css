@@ -1910,6 +1910,7 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
 
 #grandduke .hero {
   height: 30%;
+  background-color: #941751;
 }
 #grandduke .hero:after {
   background: white !important;
@@ -1935,14 +1936,16 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
     height: 60%;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1450px) {
   #grandduke .hero {
     height: 70%;
+    background-size: contain;
   }
 }
 @media (min-width: 1800px) {
   #grandduke .hero {
     height: 80%;
+    background-size: contain;
   }
 }
 #grandduke .buy-now-bar {
