@@ -2099,4 +2099,12 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
   margin-bottom: 1.5em;
 }
 
+.sign a {
+	color: black
+}
+
+.sign a:visited {
+	color: black
+}
+
 /*# sourceMappingURL=style.css.map */
