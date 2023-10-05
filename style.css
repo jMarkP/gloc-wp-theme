@@ -2030,6 +2030,21 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
   background-color: white;
 }
 
+.site-main .uagb-tabs__wrap {
+  margin-top: 15px;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.site-main .uagb-tabs__wrap ul {
+  margin: 0;
+}
+
+
+.site-main .uagb-tabs__wrap li {
+  list-style: disc;
+}
+
 /*--------------------------------------------------------------
 # Utilities
 --------------------------------------------------------------*/
