@@ -2036,12 +2036,12 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
   margin-left: -15px;
 }
 
-.site-main .uagb-tabs__wrap ul {
+.site-main .uagb-tabs__wrap .uagb-tabs__body-wrap ul {
   margin: 0;
 }
 
 
-.site-main .uagb-tabs__wrap li {
+.site-main .uagb-tabs__wrap .uagb-tabs__body-wrap li {
   list-style: disc;
 }
 
