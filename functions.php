@@ -436,3 +436,14 @@ function buy_tickets_text() {
 		echo 'Buy tickets!';
 	}
 }
+
+function the_show_dates() {
+	$start_date = get_theme_mod('upcoming-show-start-date'); 
+	$end_date = get_theme_mod('upcoming-show-end-date');
+
+	if ($start_date == $end_date) {
+		echo $start_date;
+	} else {
+		echo $start_date . ' - ' . $end_date;
+	}
+}

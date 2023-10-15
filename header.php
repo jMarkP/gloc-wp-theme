@@ -99,7 +99,7 @@ src="https://www.facebook.com/tr?id=130044594394198&ev=PageView&noscript=1"
         <div class="ticket">
           <div class="details">
             <span class="show-name"><?php echo get_theme_mod('upcoming-show-name') ?></span>
-            <span class="show-dates"><?php echo get_theme_mod('upcoming-show-start-date') ?> &ndash; <?php echo get_theme_mod('upcoming-show-end-date') ?></span>
+            <span class="show-dates"><?php the_show_dates() ?></span>
             <span class="show-location"><?php echo get_theme_mod('upcoming-show-location') ?></span>
           </div>
           <a class="buy-now" href="<?php the_ticket_link() ?>">
