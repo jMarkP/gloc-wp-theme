@@ -3,7 +3,7 @@ Theme Name: GLOC 2022
 Theme URI: https://github.com/jMarkP/gloc-wp-theme
 Author: J. Mark Pim
 Description: Theme for GLOC's website
-Version: 2.2.0
+Version: 2.2.1
 Tested up to: 5.4
 Requires PHP: 5.6
 License: GNU General Public License v2 or later
@@ -457,21 +457,6 @@ h6 {
 .site-main ul.wp-block-latest-posts li div.wp-block-latest-posts__featured-image {
   float: right;
   margin-left: 1em;
-}
-
-.site-main .uagb-tabs__wrap {
-  margin-top: 15px;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-.site-main .uagb-tabs__wrap .uagb-tabs__body-wrap ul {
-  margin: 0;
-}
-
-
-.site-main .uagb-tabs__wrap .uagb-tabs__body-wrap li {
-  list-style: disc;
 }
 
 @media screen and (min-width: 800px) {
@@ -995,7 +980,7 @@ body.clear-header {
     align-items: baseline;
   }
   .site-branding h1,
-  .site-branding h3 {
+.site-branding h3 {
     display: inline-block;
     text-align: left;
   }
@@ -2022,6 +2007,63 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
   padding: 0;
 }
 
+#loves-a-trial .hero {
+  height: 20%;
+  background-color: black;
+}
+#loves-a-trial .hero:after {
+  background: white !important;
+  height: 3px;
+}
+@media (min-width: 500px) {
+  #loves-a-trial .hero {
+    height: 30%;
+  }
+}
+@media (min-width: 700px) {
+  #loves-a-trial .hero {
+    height: 40%;
+  }
+}
+@media (min-width: 900px) {
+  #loves-a-trial .hero {
+    height: 50%;
+  }
+}
+@media (min-width: 1200px) {
+  #loves-a-trial .hero {
+    height: 60%;
+  }
+}
+@media (min-width: 1450px) {
+  #loves-a-trial .hero {
+    height: 70%;
+    background-size: contain;
+  }
+}
+@media (min-width: 1800px) {
+  #loves-a-trial .hero {
+    height: 80%;
+    background-size: contain;
+  }
+}
+#loves-a-trial .buy-now-bar {
+  background-color: #e7120b;
+}
+#loves-a-trial #page {
+  background-color: black;
+}
+#loves-a-trial .site-main h1, #loves-a-trial .site-main h2, #loves-a-trial .site-main h3, #loves-a-trial .site-main h4 {
+  font-weight: 500;
+  text-shadow: none;
+}
+#loves-a-trial .site-main .entry-content {
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
+}
+#loves-a-trial .site-main .wp-block-pullquote {
+  padding: 0;
+}
+
 /*--------------------------------------------------------------
 # Plugins
 --------------------------------------------------------------*/
@@ -2051,12 +2093,11 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
   margin-left: -15px;
 }
 
-.site-main .uagb-tabs__wrap .uagb-tabs__body-wrap ul {
+.site-main .uagb-tabs__wrap ul {
   margin: 0;
 }
 
-
-.site-main .uagb-tabs__wrap .uagb-tabs__body-wrap li {
+.site-main .uagb-tabs__wrap li {
   list-style: disc;
 }
 
@@ -2127,14 +2168,6 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.5em;
-}
-
-.sign a {
-	color: black
-}
-
-.sign a:visited {
-	color: black
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,7 +5,7 @@ get_header('show');
 
 	<div class="buy-now-bar">
 		<a href="<?php the_ticket_link() ?>">
-			<span><i class="fa-solid fa-ticket"></i> Click here to buy tickets for The Grand Duke!</span>
+			<span><i class="fa-solid fa-ticket"></i> Click here to buy tickets for <?php echo get_theme_mod('upcoming-show-name') ?>!</span>
 		</a>
 	</div>
 
