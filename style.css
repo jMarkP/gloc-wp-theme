@@ -2010,6 +2010,7 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
 #loves-a-trial .hero {
   height: 20%;
   background-color: black;
+  background-size: contain;
 }
 #loves-a-trial .hero:after {
   background: white !important;
@@ -2017,17 +2018,17 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
 }
 @media (min-width: 500px) {
   #loves-a-trial .hero {
-    height: 30%;
+    height: 40%;
   }
 }
 @media (min-width: 700px) {
   #loves-a-trial .hero {
-    height: 40%;
+    height: 50%;
   }
 }
 @media (min-width: 900px) {
   #loves-a-trial .hero {
-    height: 50%;
+    height: 60%;
   }
 }
 @media (min-width: 1200px) {
