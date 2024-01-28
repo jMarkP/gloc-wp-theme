@@ -2099,7 +2099,7 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
 }
 
 .site-main .uagb-tabs__wrap li {
-  list-style: disc;
+  list-style: none;
 }
 
 /*--------------------------------------------------------------
