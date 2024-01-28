@@ -2098,7 +2098,7 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
   margin: 0;
 }
 
-.site-main .uagb-tabs__wrap li {
+.site-main .uagb-tabs__wrap li.uagb-tab {
   list-style: none;
 }
 
