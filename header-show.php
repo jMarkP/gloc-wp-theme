@@ -30,6 +30,8 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&display=swap" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Quintessential&display=swap" rel="stylesheet">
+
   <script src="https://kit.fontawesome.com/f45f8c0350.js" crossorigin="anonymous"></script>
 
   <!-- Meta Pixel Code -->

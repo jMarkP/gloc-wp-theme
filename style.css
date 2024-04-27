@@ -980,7 +980,7 @@ body.clear-header {
     align-items: baseline;
   }
   .site-branding h1,
-.site-branding h3 {
+  .site-branding h3 {
     display: inline-block;
     text-align: left;
   }
@@ -2065,6 +2065,80 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
   padding: 0;
 }
 
+.quintessential-regular {
+  font-family: "Quintessential", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.almendra-sc-regular {
+  font-family: "Almendra SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#yeomen .hero {
+  height: 200px;
+  background-color: #5A436C;
+  background-size: contain;
+  background-position-y: 50%;
+}
+#yeomen .hero:after {
+  background: white !important;
+  height: 3px;
+  margin-left: -2em;
+  width: 110%;
+}
+@media (min-width: 800px) {
+  #yeomen .hero {
+    height: 300px;
+  }
+}
+@media (min-width: 1400px) {
+  #yeomen .hero {
+    height: 400px;
+  }
+}
+#yeomen .buy-now-bar {
+  background-color: #B83F4F;
+  font-family: "Quintessential", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#yeomen #page {
+  background-color: #EBBD9A;
+  color: #030303;
+  text-shadow: none;
+}
+#yeomen .site-main {
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+#yeomen .site-main h1, #yeomen .site-main h2, #yeomen .site-main h3, #yeomen .site-main h4 {
+  font-family: "Almendra SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #030303;
+  text-shadow: none;
+}
+#yeomen .site-main h1 {
+  font-size: 42pt;
+}
+#yeomen .site-main h2 {
+  font-size: 38pt;
+}
+#yeomen .site-main h3 {
+  font-size: 32pt;
+}
+#yeomen .site-main h4 {
+  font-size: 26pt;
+}
+#yeomen .site-main .entry-content {
+  text-shadow: none;
+}
+#yeomen .site-main .wp-block-pullquote {
+  padding: 0;
+}
+
 /*--------------------------------------------------------------
 # Plugins
 --------------------------------------------------------------*/
@@ -2098,8 +2172,8 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
   margin: 0;
 }
 
-.site-main .uagb-tabs__wrap li.uagb-tab {
-  list-style: none;
+.site-main .uagb-tabs__wrap li {
+  list-style: disc;
 }
 
 /*--------------------------------------------------------------

@@ -1,0 +1,97 @@
+$color__grandduke_dark_blue: #4A4D9C;
+$color__grandduke_light_blue: #6267AD;
+$color__sign_background: #FEF5EB;
+$color__grandduke_red: #941751;
+
+$color__yeomen_purple: #5A436C;
+$color__yeomen_red: #B83F4F;
+$color__yeomen_cream: #EBBD9A;
+$color__yeomen_black: #030303;
+
+.quintessential-regular {
+  font-family: "Quintessential", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.almendra-sc-regular {
+  font-family: "Almendra SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#yeomen {
+
+  .hero {
+    height: 200px;
+    background-color: $color__yeomen_purple;
+    background-size: contain;
+    background-position-y: 50%;
+
+    &:after {
+      background: white !important;
+      height: 3px;
+      margin-left: -2em;
+      width: 110%;
+    }
+  }
+
+  @media (min-width: 800px) {
+    .hero {
+      height: 300px;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .hero {
+      height: 400px;
+    }
+  }
+  .buy-now-bar {
+    background-color: $color__yeomen_red;
+
+    font-family: "Quintessential", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  #page {
+    background-color: $color__yeomen_cream;
+    color: $color__yeomen_black;
+    text-shadow: none;
+  }
+
+  .site-main {
+    h1,h2,h3,h4 {
+      font-family: "Almendra SC", serif;
+      font-weight: 400;
+      font-style: normal;
+      color: $color__yeomen_black;
+      text-shadow: none;
+    }
+
+    h1 {
+      font-size: 42pt;
+    }
+    h2 {
+      font-size: 38pt;
+    }
+    h3 {
+      font-size: 32pt;
+    }
+    h4 {
+      font-size: 26pt;
+    }
+
+    font-family: 'Fira Sans Condensed', sans-serif;
+
+    .entry-content {
+      text-shadow: none;
+    }
+
+    .wp-block-pullquote {
+      padding: 0;
+    }
+  }
+
+}
