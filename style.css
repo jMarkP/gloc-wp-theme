@@ -2142,10 +2142,10 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
 
 
 #mikado .hero {
-  height: 300px;
+  height: 250px;
   background-color: #8CB0BD;
   background-size: contain;
-  background-position-y: 100%;
+  background-position-y: 50%;
   margin-top: 4em;
 }
 
