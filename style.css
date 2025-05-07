@@ -2172,6 +2172,9 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
   background-color: #8CB0BD;
   color: #0E2839;
 }
+#mikado .buy-now-bar a {
+  color: #0E2839;
+}
 #mikado #page {
   background-color: #0E2839;
   color: #8CB0BD;
