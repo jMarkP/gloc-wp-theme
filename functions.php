@@ -9,7 +9,7 @@
 
 if ( ! defined( 'GLOC_2022_VERSION' ) ) {
 	// Replace the version number of the theme on each release.
-	define( 'GLOC_2022_VERSION', '2.1.6' );
+	define( 'GLOC_2022_VERSION', '2.1.7' );
 }
 
 /**

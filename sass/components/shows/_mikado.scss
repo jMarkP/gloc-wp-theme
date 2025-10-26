@@ -1,0 +1,84 @@
+#mikado .hero {
+    height: 250px;
+    background-color: #8CB0BD;
+    background-size: contain;
+    background-position-y: 50%;
+    margin-top: 4em;
+}
+
+#mikado .hero .header-bar {
+    margin-top: -4.5em;
+}
+
+#mikado .hero:after {
+    background: white !important;
+    height: 3px;
+    margin-left: -2em;
+    width: 110%;
+}
+
+@media (min-width: 800px) {
+    #mikado .hero {
+        height: 800px;
+    }
+}
+
+@media (min-width: 1400px) {
+    #mikado .hero {
+        height: 1000px;
+    }
+}
+
+#mikado .buy-now-bar {
+    background-color: #8CB0BD;
+    color: #0E2839;
+}
+
+#mikado .buy-now-bar a {
+    color: #0E2839;
+}
+
+#mikado #page {
+    background-color: #0E2839;
+    color: #8CB0BD;
+    text-shadow: none;
+}
+
+#mikado .site-main {
+    font-family: "Fira Sans Condensed", sans-serif;
+}
+
+#mikado .site-main h1,
+#mikado .site-main h2,
+#mikado .site-main h3,
+#mikado .site-main h4 {
+    font-family: "Almendra SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #e6dac3;
+    text-shadow: none;
+}
+
+#mikado .site-main h1 {
+    font-size: 42pt;
+}
+
+#mikado .site-main h2 {
+    font-size: 38pt;
+}
+
+#mikado .site-main h3 {
+    font-size: 32pt;
+}
+
+#mikado .site-main h4 {
+    font-size: 26pt;
+}
+
+#mikado .site-main .entry-content {
+    text-shadow: none;
+}
+
+#mikado .site-main .wp-block-pullquote {
+    padding: 0;
+}
