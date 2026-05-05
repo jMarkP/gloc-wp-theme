@@ -2285,6 +2285,66 @@ a.show-ticket-link:hover, a.show-ticket-link:focus, a.show-ticket-link:visited {
   padding: 0;
 }
 
+#patience .hero {
+  height: 400px;
+  background-color: #8A9F48;
+  background-size: contain;
+  background-position-y: 50%;
+}
+#patience .hero:after {
+  background: white !important;
+  height: 3px;
+  margin-left: -2em;
+  width: 110%;
+}
+@media (min-width: 800px) {
+  #patience .hero {
+    height: 800px;
+  }
+}
+@media (min-width: 1400px) {
+  #patience .hero {
+    height: 1000px;
+  }
+}
+#patience .buy-now-bar {
+  background-color: #512C41;
+  font-weight: 400;
+  font-style: normal;
+}
+#patience #page {
+  background-color: #FEE9B0;
+  color: #030303;
+  text-shadow: none;
+}
+#patience .site-main {
+  font-family: "Fira Sans Condensed", sans-serif;
+}
+#patience .site-main h1, #patience .site-main h2, #patience .site-main h3, #patience .site-main h4 {
+  font-weight: 400;
+  font-style: normal;
+  color: #030303;
+  text-shadow: none;
+}
+#patience .site-main h1 {
+  font-size: 42pt;
+}
+#patience .site-main h2 {
+  font-size: 38pt;
+}
+#patience .site-main h3 {
+  font-size: 32pt;
+}
+#patience .site-main h4 {
+  font-size: 26pt;
+}
+#patience .site-main .entry-content {
+  text-shadow: none;
+}
+#patience .site-main .wp-block-pullquote {
+  padding: 0;
+}
+
 /*--------------------------------------------------------------
 # Plugins
 --------------------------------------------------------------*/

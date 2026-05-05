@@ -1,0 +1,79 @@
+$color__patience_yellow: #E4BF4A;
+$color__patience_cream: #FEE9B0;
+$color__patience_purple: #512C41;
+$color__patience_red: #6F2C1D;
+$color__patience_green: #8A9F48;
+
+#patience {
+
+  .hero {
+    height: 400px;
+    background-color: $color__patience_green;
+    background-size: contain;
+    background-position-y: 50%;
+
+    &:after {
+      background: white !important;
+      height: 3px;
+      margin-left: -2em;
+      width: 110%;
+    }
+  }
+
+  @media (min-width: 800px) {
+    .hero {
+      height: 800px;
+    }
+  }
+
+  @media (min-width: 1400px) {
+    .hero {
+      height: 1000px;
+    }
+  }
+  .buy-now-bar {
+    background-color: $color__patience_purple;
+
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  #page {
+    background-color: $color__patience_cream;
+    color: $color__yeomen_black;
+    text-shadow: none;
+  }
+
+  .site-main {
+    h1,h2,h3,h4 {
+      font-weight: 400;
+      font-style: normal;
+      color: $color__yeomen_black;
+      text-shadow: none;
+    }
+
+    h1 {
+      font-size: 42pt;
+    }
+    h2 {
+      font-size: 38pt;
+    }
+    h3 {
+      font-size: 32pt;
+    }
+    h4 {
+      font-size: 26pt;
+    }
+
+    font-family: 'Fira Sans Condensed', sans-serif;
+
+    .entry-content {
+      text-shadow: none;
+    }
+
+    .wp-block-pullquote {
+      padding: 0;
+    }
+  }
+
+}
